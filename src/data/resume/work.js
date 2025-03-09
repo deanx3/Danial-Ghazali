@@ -13,6 +13,20 @@
  */
 const work = [
   {
+    name: 'Ascend Solutions',
+    position: 'Senior Full Stack Engineer',
+    url: 'https://ascendsolutions.com',
+    startDate: '2020-06-01',
+    summary: 'Leading the development of Enovi LiveAgent, a customer support ticketing system used across Saudi Arabia. Architecting scalable solutions and improving system performance.',
+    highlights: [
+      'Led an agile team of 5 developers, scaling the system to handle over 900k tickets.',
+      'Converted monolith architecture to layered microservices, reducing costs by 35% and improving API performance by 50%.',
+      'Developed reusable components and 30+ REST APIs for AWS S3 integrations.',
+      'Implemented CI/CD pipelines using GitHub Actions.',
+    ],
+  },
+  {
+
     name: 'Smile Identity',
     position: 'VP Engineering & Head of AI',
     url: 'https://smileidentity.com',
