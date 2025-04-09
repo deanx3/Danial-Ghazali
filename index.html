@@ -1,426 +1,618 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danial Ghazali | Senior Full Stack Developer</title>
-    <meta name="description" content="Senior Full Stack Developer specializing in Golang, Laravel, and microservices architecture">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#3b82f6',
-                        secondary: '#10b981',
-                        dark: '#0f172a',
-                        darker: '#020617',
-                    },
-                    fontFamily: {
-                        mono: ['"Fira Code"', 'monospace'],
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danial Ghazali | Tech Lead</title>
+  <meta name="description"
+    content="Senior Full Stack Developer specializing in Golang, Laravel, and microservices architecture">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3b82f6',
+            secondary: '#10b981',
+            dark: '#0f172a',
+            darker: '#020617',
+          },
+          fontFamily: {
+            mono: ['"Fira Code"', 'monospace'],
+          }
         }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            background-color: #020617;
-            color: #e2e8f0;
-            font-family: 'Fira Code', monospace;
-        }
-        
-        .terminal {
-            background-color: rgba(15, 23, 42, 0.8);
-            border: 1px solid #1e293b;
-            border-radius: 0.5rem;
-            box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
-        }
-        
-        .terminal-header {
-            background-color: #1e293b;
-            border-top-left-radius: 0.5rem;
-            border-top-right-radius: 0.5rem;
-        }
-        
-        .terminal-body {
-            padding: 1.5rem;
-        }
-        
-        .prompt {
-            color: #10b981;
-        }
-        
-        .command {
-            color: #3b82f6;
-        }
-        
-        .comment {
-            color: #64748b;
-        }
-        
-        .typewriter {
-            overflow: hidden;
-            border-right: 2px solid #3b82f6;
-            white-space: nowrap;
-            margin: 0 auto;
-            letter-spacing: 0.15em;
-            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-        }
-        
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-        
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: #3b82f6 }
-        }
-        
-        .skill-bar {
-            background-color: #1e293b;
-            height: 8px;
-            border-radius: 4px;
-        }
-        
-        .skill-progress {
-            background: linear-gradient(90deg, #3b82f6, #10b981);
-            height: 100%;
-            border-radius: 4px;
-        }
-        
-        .project-card {
-            background: linear-gradient(145deg, #0f172a, #1e293b);
-            border: 1px solid #334155;
-            transition: all 0.3s ease;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
-            border-color: #3b82f6;
-        }
-        
-        .glow {
-            text-shadow: 0 0 10px rgba(59, 130, 246, 0.7);
-        }
-    </style>
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #020617;
+      color: #e2e8f0;
+      font-family: 'Fira Code', monospace;
+    }
+
+    .terminal {
+      background-color: rgba(15, 23, 42, 0.8);
+      border: 1px solid #1e293b;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+    }
+
+    .terminal-header {
+      background-color: #1e293b;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+
+    .terminal-body {
+      padding: 1.5rem;
+    }
+
+    .prompt {
+      color: #10b981;
+    }
+
+    .command {
+      color: #3b82f6;
+    }
+
+    .comment {
+      color: #64748b;
+    }
+
+    .typewriter {
+      overflow: hidden;
+      border-right: 2px solid #3b82f6;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: 0.15em;
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0
+      }
+
+      to {
+        width: 100%
+      }
+    }
+
+    @keyframes blink-caret {
+
+      from,
+      to {
+        border-color: transparent
+      }
+
+      50% {
+        border-color: #3b82f6
+      }
+    }
+
+    .skill-bar {
+      background-color: #1e293b;
+      height: 8px;
+      border-radius: 4px;
+    }
+
+    .skill-progress {
+      background: linear-gradient(90deg, #3b82f6, #10b981);
+      height: 100%;
+      border-radius: 4px;
+    }
+
+    .project-card {
+      background: linear-gradient(145deg, #0f172a, #1e293b);
+      border: 1px solid #334155;
+      transition: all 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+      border-color: #3b82f6;
+    }
+
+    .glow {
+      text-shadow: 0 0 10px rgba(59, 130, 246, 0.7);
+    }
+  </style>
 </head>
 
 <body class="min-h-screen">
-    <!-- Terminal-style Navigation -->
-    <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
-        <div class="flex items-center space-x-4">
-            <span class="text-primary text-xl font-bold">danial@portfolio:~</span>
-        </div>
-        <div class="hidden md:flex space-x-6">
-            <a href="#about" class="text-gray-400 hover:text-primary transition">about</a>
-            <a href="#experience" class="text-gray-400 hover:text-primary transition">experience</a>
-            <a href="#skills" class="text-gray-400 hover:text-primary transition">skills</a>
-            <a href="#projects" class="text-gray-400 hover:text-primary transition">projects</a>
-            <a href="#contact" class="text-gray-400 hover:text-primary transition">contact</a>
-        </div>
-    </nav>
+  <!-- Terminal-style Navigation -->
+  <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <span class="text-primary text-xl font-bold">danial@portfolio:~</span>
+    </div>
+    <div class="hidden md:flex space-x-6">
+      <a href="#about" class="text-gray-400 hover:text-primary transition">about</a>
+      <a href="#experience" class="text-gray-400 hover:text-primary transition">experience</a>
+      <a href="#skills" class="text-gray-400 hover:text-primary transition">skills</a>
+      <a href="#projects" class="text-gray-400 hover:text-primary transition">projects</a>
+      <a href="#contact" class="text-gray-400 hover:text-primary transition">contact</a>
+    </div>
+  </nav>
 
-    <!-- Hero Section with Terminal Effect -->
-    <section class="container mx-auto px-4 py-20 md:py-32">
-        <div class="terminal max-w-3xl mx-auto">
-            <div class="terminal-header flex items-center px-4 py-2">
-                <div class="flex space-x-2">
-                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                </div>
-            </div>
-            <div class="terminal-body">
-                <div class="mb-4">
-                    <span class="prompt">$</span>
-                    <span class="command"> whoami</span>
-                </div>
-                <div class="typewriter text-2xl md:text-4xl font-bold mb-6">
-                    Danial Ghazali - Solution Architecture 
-                </div>
-                <div class="mb-4">
-                    <span class="prompt">$</span>
-                    <span class="command"> cat bio.txt</span>
-                </div>
-                <p class="mb-6">
-                    <span class="comment">// 9+ years building scalable systems</span><br>
-                    <span class="comment">// Golang, Laravel, Microservices expert</span><br>
-                    <span class="comment">// Team lead & architecture specialist</span>
-                </p>
-                <div class="mb-4">
-                    <span class="prompt">$</span>
-                    <span class="command"> ./connect.sh</span>
-                </div>
-                <div class="flex space-x-4">
-                    <a href="#contact" class="px-4 py-2 bg-primary text-dark rounded hover:bg-blue-400 transition">Contact Me</a>
-                    <a href="#projects" class="px-4 py-2 border border-primary text-primary rounded hover:bg-blue-900/30 transition">View Work</a>
-                </div>
-            </div>
+  <!-- Hero Section with Terminal Effect -->
+  <section class="container mx-auto px-4 py-20 md:py-32">
+    <div class="terminal max-w-4xl mx-auto">
+      <div class="terminal-header flex items-center px-4 py-2">
+        <div class="flex space-x-2">
+          <div class="w-3 h-3 rounded-full bg-red-500"></div>
+          <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+          <div class="w-3 h-3 rounded-full bg-green-500"></div>
         </div>
-    </section>
+      </div>
+      <div class="terminal-body">
+        <div class="mb-4">
+          <span class="prompt">$</span>
+          <span class="command"> whoami</span>
+        </div>
+        <div class="typewriter text-2xl md:text-4xl font-bold mb-6">
+          Danial Ghazali - Solution Architecture
+        </div>
+        <div class="mb-4">
+          <span class="prompt">$</span>
+          <span class="command"> cat bio.txt</span>
+        </div>
+        <p class="mb-6">
+          <span class="comment">// 9+ years building scalable systems</span><br>
+          <span class="comment">// Golang, Laravel, Microservices expert</span><br>
+          <span class="comment">// Team lead & architecture specialist</span>
+        </p>
+        <div class="mb-4">
+          <span class="prompt">$</span>
+          <span class="command"> ./connect.sh</span>
+        </div>
+        <div class="flex space-x-4">
+          <a href="#contact" class="px-4 py-2 bg-primary text-dark rounded hover:bg-blue-400 transition">Contact Me</a>
+          <a href="#projects"
+            class="px-4 py-2 border border-primary text-primary rounded hover:bg-blue-900/30 transition">View Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="container mx-auto px-4 py-20">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 glow">
+        <span class="text-primary">#</span> about_me
+      </h2>
+      <div class="terminal p-6">
+        <p class="mb-4">
+          <span class="prompt">></span> I'm a <span class="text-primary">Team Lead & Senior Full Stack Developer</span>
+          with 9+ years of experience building scalable systems for leading organizations.
+        </p>
+        <p class="mb-4">
+          <span class="prompt">></span> Specializing in <span class="text-secondary">Golang/Gin</span>, <span
+            class="text-secondary">Laravel/PHP</span>, and <span class="text-secondary">Vue.js/React</span>, I architect
+          solutions that handle <span class="text-primary">15,000+ daily tickets</span> and scale to <span
+            class="text-primary">900k+ records</span>.
+        </p>
+        <p class="mb-4">
+          <span class="prompt">></span> My expertise spans <span class="text-secondary">microservices</span>, <span
+            class="text-secondary">database design</span>, and <span class="text-secondary">performance
+            optimization</span>, with proven results in reducing costs by 35% and improving API speeds by 50%.
+        </p>
+        <p>
+          <span class="prompt">></span> Beyond code, I excel in <span class="text-secondary">Agile leadership</span>,
+          <span class="text-secondary">client partnerships</span>, and mentoring teams of 5+ developers to deliver
+          exceptional products.
+        </p>
+      </div>
+    </div>
+  </section>
+<!-- Skills Section -->
+  <section id="skills" class="container mx-auto px-4 py-20">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 glow">
+        <span class="text-primary">#</span> skills
+      </h2>
 
-    <!-- About Section -->
-    <section id="about" class="container mx-auto px-4 py-20">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-6 glow">
-                <span class="text-primary">#</span> about_me
-            </h2>
-            <div class="terminal p-6">
-                <p class="mb-4">
-                    <span class="prompt">></span> I'm a <span class="text-primary">Senior Full Stack Developer</span> with extensive experience in building high-performance web applications and microservices.
-                </p>
-                <p class="mb-4">
-                    <span class="prompt">></span> Specializing in <span class="text-secondary">Golang</span>, <span class="text-secondary">Laravel</span>, and modern web technologies, I've led teams to develop systems handling <span class="text-primary">15,000+ daily tickets</span> and scaling to <span class="text-primary">900k+ records</span>.
-                </p>
-                <p>
-                    <span class="prompt">></span> My approach combines <span class="text-secondary">clean architecture</span>, <span class="text-secondary">performance optimization</span>, and <span class="text-secondary">agile methodologies</span> to deliver robust solutions.
-                </p>
+      <div class="terminal p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Backend -->
+        <div>
+          <h3 class="text-xl font-bold text-primary mb-4">Backend</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Golang/Gin</span>
+                <span>3 years</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
             </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Laravel/PHP</span>
+                <span>8 years</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Node.js</span>
+                <span>2 years</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Database Design</span>
+                <span>7 years</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="container mx-auto px-4 py-20">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-6 glow">
-                <span class="text-primary">#</span> experience
-            </h2>
-            
-            <div class="space-y-8">
-                <!-- Current Position -->
-                <div class="terminal p-6">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                        <h3 class="text-xl font-bold text-primary">Ascend Solutions</h3>
-                        <span class="text-gray-400">06/2020 - Present</span>
-                    </div>
-                    <h4 class="text-lg font-semibold mb-2">Senior Full Stack Engineer</h4>
-                    <ul class="list-disc pl-6 space-y-2">
-                        <li>Led team of 5 developers building customer support system handling <span class="text-secondary">15k+ daily tickets</span></li>
-                        <li>Architected multi-tenancy system scaling to <span class="text-secondary">900k+ tickets</span></li>
-                        <li>Developed <span class="text-secondary">5+ Golang microservices</span> improving performance by 70%</li>
-                        <li>Converted monolith to layered architecture, reducing costs by <span class="text-secondary">35%</span></li>
-                    </ul>
-                </div>
-                
-                <!-- Previous Position -->
-                <div class="terminal p-6">
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                        <h3 class="text-xl font-bold text-primary">Uxbert Labs</h3>
-                        <span class="text-gray-400">12/2018 - 06/2020</span>
-                    </div>
-                    <h4 class="text-lg font-semibold mb-2">Full Stack Developer</h4>
-                    <ul class="list-disc pl-6 space-y-2">
-                        <li>Developed social engagement platform managing <span class="text-secondary">100k+ daily tickets</span></li>
-                        <li>Implemented payment API and Google Maps integration</li>
-                        <li>Optimized performance leading to <span class="text-secondary">40% increase in sales</span></li>
-                    </ul>
-                </div>
+        <!-- Frontend -->
+        <div>
+          <h3 class="text-xl font-bold text-primary mb-4">Frontend</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Vue.js</span>
+                <span>5 years</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
             </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>React</span>
+                <span>3 years</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Tailwind CSS</span>
+                <span>2 years</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Bootstrap</span>
+                <span>5 years</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="container mx-auto px-4 py-20">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-6 glow">
-                <span class="text-primary">#</span> skills
-            </h2>
-            
-            <div class="terminal p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Backend Skills -->
-                <div>
-                    <h3 class="text-xl font-bold text-primary mb-4">Backend</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Golang/Gin</span>
-                                <span>3 years</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Laravel/PHP</span>
-                                <span>8 years</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Node.js</span>
-                                <span>2 years</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Frontend Skills -->
-                <div>
-                    <h3 class="text-xl font-bold text-primary mb-4">Frontend</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Vue.js</span>
-                                <span>5 years</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>React</span>
-                                <span>3 years</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Tailwind CSS</span>
-                                <span>2 years</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- DevOps & Tools -->
+        <div>
+          <h3 class="text-xl font-bold text-primary mb-4">DevOps & Tools</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Docker</span>
+                <span>3 years</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
             </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>AWS</span>
+                <span>3 years</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>CI/CD</span>
+                <span>5 years</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Kafka</span>
+                <span>1 year</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Experience Section -->
+  <section id="experience" class="container mx-auto px-4 py-20">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 glow">
+        <span class="text-primary">#</span> experience
+      </h2>
+
+      <div class="space-y-8">
+        <!-- Agend -->
+        <div class="terminal p-6">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+            <h3 class="text-xl font-bold text-primary">Ascend, Saudi Arabia</h3>
+            <span class="text-gray-400">07/2020 - Present</span>
+          </div>
+          <h4 class="text-lg font-semibold mb-2">Technology and Solution Manager</h4>
+
+          <div class="mb-6">
+            <h5 class="font-medium text-secondary mb-2">Enovi LiveAgent</h5>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Led 15+ developers in building customer support system handling <span class="text-secondary">15k+ daily
+                  tickets</span> with 1000+ users</li>
+              <li>Designed multi-tenancy architecture scaling to <span class="text-secondary">900k+ tickets</span></li>
+              <li>Converted monolith to layered architecture, <span class="text-secondary">reducing costs by 35%</span>
+                and improving API speed by 50%</li>
+              <li>Built <span class="text-secondary">5+ Golang microservices</span> improving dashboard performance by
+                70%</li>
+              <li>Developed 30+ REST APIs for AWS S3 integration and CI/CD pipelines</li>
+            </ul>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Golang</span>
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React.js</span>
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MongoDB</span>
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">AWS</span>
+            </div>
+          </div>
+
+          <div>
+            <h5 class="font-medium text-secondary mb-2">Astrom (ETL Platform)</h5>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Led team of 10+ developers building data integration platform</li>
+              <li>Researched and integrated <span class="text-secondary">20+ data sources</span> (SaaS, APIs, databases)
+              </li>
+              <li>Implemented precise pipeline scheduling controls</li>
+            </ul>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Golang</span>
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Vue.js</span>
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Kafka</span>
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Airflow</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Uxbert Labs -->
+        <div class="terminal p-6">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+            <h3 class="text-xl font-bold text-primary">Uxbert Labs, Saudi Arabia</h3>
+            <span class="text-gray-400">12/2018 - 07/2020</span>
+          </div>
+          <h4 class="text-lg font-semibold mb-2">Full Stack Developer</h4>
+
+          <div class="mb-6">
+            <h5 class="font-medium text-secondary mb-2">WeBook (Event Platform)</h5>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Developed backend for platform managing <span class="text-secondary">100+ events</span> and <span
+                  class="text-secondary">100k+ daily tickets</span></li>
+              <li>Implemented payment APIs and Google Maps integration for pick-drop services</li>
+              <li>Enhanced frontend with React.js, <span class="text-secondary">improving UX by 30%</span></li>
+              <li>Contributed to <span class="text-secondary">40% increase in sales</span> through feature development
+              </li>
+            </ul>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MongoDB</span>
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Redis</span>
+            </div>
+          </div>
+
+          <div>
+            <h5 class="font-medium text-secondary mb-2">Kafu Games (Esports Platform)</h5>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Managed backend for platform hosting tournaments with <span class="text-secondary">200k+
+                  players</span></li>
+              <li>Optimized performance by <span class="text-secondary">30%</span> through lazy loading and database
+                indexing</li>
+              <li>Reduced load times by <span class="text-secondary">50%</span> through query optimization</li>
+            </ul>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
+              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Google Cloud</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="container mx-auto px-4 py-20">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-6 glow">
-                <span class="text-primary">#</span> projects
-            </h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Project 1 -->
-                <div class="project-card rounded-lg p-6">
-                    <h3 class="text-xl font-bold text-primary mb-2">Enovi LiveAgent</h3>
-                    <p class="text-gray-400 mb-4">Customer support ticketing system with 1000+ users</p>
-                    <ul class="list-disc pl-6 space-y-1 text-sm">
-                        <li>Handles 15,000+ daily tickets</li>
-                        <li>Multi-tenancy architecture</li>
-                        <li>Golang microservices</li>
-                    </ul>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Golang</span>
-                        <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
-                        <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card rounded-lg p-6">
-                    <h3 class="text-xl font-bold text-primary mb-2">Astrom</h3>
-                    <p class="text-gray-400 mb-4">ETL platform connecting 20+ data sources</p>
-                    <ul class="list-disc pl-6 space-y-1 text-sm">
-                        <li>Data pipeline management</li>
-                        <li>Kafka integration</li>
-                        <li>Vue.js frontend</li>
-                    </ul>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Golang</span>
-                        <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Vue.js</span>
-                        <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Kafka</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="projects" class="container mx-auto px-4 py-20">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 glow">
+        <span class="text-primary">#</span> projects
+      </h2>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container mx-auto px-4 py-20">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-6 glow">
-                <span class="text-primary">#</span> contact
-            </h2>
-            
-            <div class="terminal p-6">
-                <div class="mb-4">
-                    <span class="prompt">$</span>
-                    <span class="command"> send_message --to danialghazali31@gmail.com</span>
-                </div>
-                
-                <form class="space-y-4">
-                    <div>
-                        <label class="block text-sm text-gray-400 mb-1">Name</label>
-                        <input type="text" class="w-full bg-darker border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-primary">
-                    </div>
-                    <div>
-                        <label class="block text-sm text-gray-400 mb-1">Email</label>
-                        <input type="email" class="w-full bg-darker border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-primary">
-                    </div>
-                    <div>
-                        <label class="block text-sm text-gray-400 mb-1">Message</label>
-                        <textarea rows="4" class="w-full bg-darker border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-primary"></textarea>
-                    </div>
-                    <button type="submit" class="px-6 py-2 bg-primary text-dark rounded hover:bg-blue-400 transition font-medium">Submit</button>
-                </form>
-                
-                <div class="mt-8">
-                    <span class="prompt">$</span>
-                    <span class="command"> find_me_on</span>
-                    <div class="flex space-x-4 mt-4">
-                        <a href="#" class="text-gray-400 hover:text-primary transition">GitHub</a>
-                        <a href="#" class="text-gray-400 hover:text-primary transition">LinkedIn</a>
-                        <a href="#" class="text-gray-400 hover:text-primary transition">Twitter</a>
-                    </div>
-                </div>
-            </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Enovi LiveAgent -->
+        <div class="project-card rounded-lg p-6">
+          <h3 class="text-xl font-bold text-primary mb-2">Enovi LiveAgent</h3>
+          <p class="text-gray-400 mb-4">Enterprise customer support system</p>
+          <ul class="list-disc pl-6 space-y-1 text-sm">
+            <li>Scaled to handle <span class="text-secondary">900k+ tickets</span> with multi-tenancy architecture</li>
+            <li>Reduced infrastructure costs by <span class="text-secondary">35%</span> through architectural redesign
+            </li>
+            <li>Improved API performance by <span class="text-secondary">50%</span> with service layer implementation
+            </li>
+            <li>Built <span class="text-secondary">5+ Golang microservices</span> for critical functions</li>
+          </ul>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Golang</span>
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MongoDB</span>
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">AWS</span>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="border-t border-gray-800 py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-gray-400">
-                &copy; 2023 Danial Ghazali. Built with <span class="text-primary">Golang</span> and <span class="text-primary">Tailwind CSS</span>
-            </p>
+        <!-- Astrom -->
+        <div class="project-card rounded-lg p-6">
+          <h3 class="text-xl font-bold text-primary mb-2">Astrom</h3>
+          <p class="text-gray-400 mb-4">ETL Data Integration Platform</p>
+          <ul class="list-disc pl-6 space-y-1 text-sm">
+            <li>Integrated <span class="text-secondary">20+ data sources</span> (SaaS, APIs, databases)</li>
+            <li>Implemented minute-level pipeline scheduling controls</li>
+            <li>Developed with Golang backend and Vue.js frontend</li>
+            <li>Utilized Kafka for real-time data processing</li>
+          </ul>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Golang</span>
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Vue.js</span>
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Kafka</span>
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Airflow</span>
+          </div>
         </div>
-    </footer>
 
-    <script>
-        // Simple typewriter effect for terminal commands
-        document.addEventListener('DOMContentLoaded', () => {
-            const commands = [
-                'git commit -m "Initial portfolio version"',
-                'go build ./cmd/server',
-                'docker compose up -d',
-                'npm run dev'
-            ];
-            
-            let currentCommand = 0;
-            const commandElement = document.querySelector('.command');
-            
-            if (commandElement) {
-                setInterval(() => {
-                    commandElement.textContent = ' ' + commands[currentCommand];
-                    currentCommand = (currentCommand + 1) % commands.length;
-                }, 3000);
-            }
-        });
-    </script>
+        <!-- Halayalla -->
+        <div class="project-card rounded-lg p-6">
+          <h3 class="text-xl font-bold text-primary mb-2">Halayalla</h3>
+          <p class="text-gray-400 mb-4">Social Engagement Platform</p>
+          <ul class="list-disc pl-6 space-y-1 text-sm">
+            <li>Managed <span class="text-secondary">100+ events</span> with <span class="text-secondary">100k+ daily
+                tickets</span></li>
+            <li>Increased sales by <span class="text-secondary">40%</span> through feature development</li>
+            <li>Integrated payment gateways and Google Maps API</li>
+            <li>Improved UX by <span class="text-secondary">30%</span> with React.js enhancements</li>
+          </ul>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MongoDB</span>
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Redis</span>
+          </div>
+        </div>
+
+        <!-- Kafu Games -->
+        <div class="project-card rounded-lg p-6">
+          <h3 class="text-xl font-bold text-primary mb-2">Kafu Games</h3>
+          <p class="text-gray-400 mb-4">Esports Tournament Platform</p>
+          <ul class="list-disc pl-6 space-y-1 text-sm">
+            <li>Supported <span class="text-secondary">200k+ players</span> in competitive gaming</li>
+            <li>Optimized performance by <span class="text-secondary">30%</span> through code improvements</li>
+            <li>Reduced load times by <span class="text-secondary">50%</span> via database optimization</li>
+            <li>Implemented lazy loading and advanced indexing</li>
+          </ul>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
+            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Google Cloud</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto px-4 py-20">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 glow">
+        <span class="text-primary">#</span> contact
+      </h2>
+
+      <div class="terminal p-6">
+        <div class="mb-4">
+          <span class="prompt">$</span>
+          <span class="command"> send_message --to danialghazali31@gmail.com</span>
+        </div>
+
+        <form class="space-y-4">
+          <div>
+            <label class="block text-sm text-gray-400 mb-1">Name</label>
+            <input type="text"
+              class="w-full bg-darker border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-primary">
+          </div>
+          <div>
+            <label class="block text-sm text-gray-400 mb-1">Email</label>
+            <input type="email"
+              class="w-full bg-darker border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-primary">
+          </div>
+          <div>
+            <label class="block text-sm text-gray-400 mb-1">Message</label>
+            <textarea rows="4"
+              class="w-full bg-darker border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-primary"></textarea>
+          </div>
+          <button type="submit"
+            class="px-6 py-2 bg-primary text-dark rounded hover:bg-blue-400 transition font-medium">Submit</button>
+        </form>
+
+        <div class="mt-8">
+          <span class="prompt">$</span>
+          <span class="command"> find_me_on</span>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-gray-400 hover:text-primary transition">GitHub</a>
+            <a href="#" class="text-gray-400 hover:text-primary transition">LinkedIn</a>
+            <a href="#" class="text-gray-400 hover:text-primary transition">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-400">
+        &copy; 2025 Danial Ghazali. Built with 
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple typewriter effect for terminal commands
+    document.addEventListener('DOMContentLoaded', () => {
+      const commands = [
+        'git commit -m "Initial portfolio version"',
+        'go build ./cmd/server',
+        'docker compose up -d',
+        'npm run dev'
+      ];
+
+      let currentCommand = 0;
+      const commandElement = document.querySelector('.command');
+
+      if (commandElement) {
+        setInterval(() => {
+          commandElement.textContent = ' ' + commands[currentCommand];
+          currentCommand = (currentCommand + 1) % commands.length;
+        }, 3000);
+      }
+    });
+  </script>
 </body>
+
 </html>
