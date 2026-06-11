@@ -1,764 +1,1120 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="bronze">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary Meta Tags -->
-  <title>Danial Ghazali | Solution Architect & Full Stack Developer | Golang, Laravel, Big Data</title>
-  <meta name="title" content="Danial Ghazali | Solution Architect & Full Stack Developer | Golang, Laravel, Big Data">
-  <meta name="description" content="Danial Ghazali - Solution Architect & Full Stack Developer with 9+ years experience. Expert in Golang, Laravel, Python, and microservices. Specialized in big data pipelines, ETL platforms, and enterprise solutions in Saudi Arabia.">
-  <meta name="keywords" content="Danial Ghazali, Solution Architect, Full Stack Developer, Golang Developer, Laravel Expert, Python Developer, Microservices Architect, Big Data, ETL Pipelines, Snowflake, Apache Airflow, Saudi Arabia Developer, Backend Developer, Data Engineering, API Development, DevOps">
+  <title>Danial Ghazali — Solution Architect & Full Stack Developer</title>
+  <meta name="title" content="Danial Ghazali — Solution Architect & Full Stack Developer">
+  <meta name="description" content="Solution Architect & Full Stack Developer with 10+ years of experience. Golang, Laravel, React, Vue and microservices — enterprise systems in Saudi Arabia.">
+  <meta name="keywords" content="Danial Ghazali, Solution Architect, Full Stack Developer, Golang Developer, Laravel Expert, Python Developer, Microservices Architect, React, Vue.js, Big Data, ETL Pipelines, Snowflake, ClickHouse, Apache Airflow, Saudi Arabia Developer, Backend Developer, API Development, DevOps">
   <meta name="author" content="Danial Ghazali">
   <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  <meta name="revisit-after" content="7 days">
   <link rel="canonical" href="https://danialghazali.com" />
 
-  <!-- Theme Color -->
-  <meta name="theme-color" content="#020617">
-  <meta name="msapplication-TileColor" content="#020617">
+  <meta name="theme-color" content="#0e0b07">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="profile:first_name" content="Danial">
+  <meta property="profile:last_name" content="Ghazali">
   <meta property="og:url" content="https://danialghazali.com/">
-  <meta property="og:title" content="Danial Ghazali | Solution Architect & Full Stack Developer">
-  <meta property="og:description" content="Solution Architect & Full Stack Developer with 9+ years experience. Expert in Golang, Laravel, Python, and microservices. Specialized in big data pipelines and enterprise solutions.">
+  <meta property="og:title" content="Danial Ghazali — Solution Architect & Full Stack Developer">
+  <meta property="og:description" content="I design and build software at national scale. Golang · Laravel · React · Vue — 900k+ tickets scaled, 99.9% uptime, 10+ years.">
   <meta property="og:image" content="https://danialghazali.com/og-image.png">
+  <meta property="og:image:alt" content="Danial Ghazali — Solution Architect & Full Stack Developer">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:site_name" content="Danial Ghazali Portfolio">
+  <meta property="og:site_name" content="Danial Ghazali">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://danialghazali.com/">
-  <meta name="twitter:title" content="Danial Ghazali | Solution Architect & Full Stack Developer">
-  <meta name="twitter:description" content="Solution Architect & Full Stack Developer with 9+ years experience. Expert in Golang, Laravel, Python, and microservices.">
+  <meta name="twitter:title" content="Danial Ghazali — Solution Architect & Full Stack Developer">
+  <meta name="twitter:description" content="I design and build software at national scale. Golang · Laravel · React · Vue.">
   <meta name="twitter:image" content="https://danialghazali.com/og-image.png">
+  <meta name="twitter:image:alt" content="Danial Ghazali — Solution Architect & Full Stack Developer">
   <meta name="twitter:creator" content="@Deanx33">
   <meta name="twitter:site" content="@Deanx33">
 
-  <!-- Preconnect for Performance -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.tailwindcss.com">
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            primary: '#3b82f6',
-            secondary: '#10b981',
-            dark: '#0f172a',
-            darker: '#020617',
-          },
-          fontFamily: {
-            mono: ['"Fira Code"', 'monospace'],
-          }
-        }
-      }
-    }
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,500;10..72,700;10..72,800&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      background-color: #020617;
-      color: #e2e8f0;
-      font-family: 'Fira Code', monospace;
+    /* ============================================================
+       THEMES — pick yours, or keep the switcher for visitors.
+       To lock a theme: set data-theme="..." on <html> and
+       remove the .theme-picker block + its JS.
+       ============================================================ */
+    :root, [data-theme="bronze"]{        /* 01 · BRONZE — warm amber on dark bronze */
+      --bg:#0e0b07;  --bg-raise:#16110a; --panel:#1b150c;
+      --line:#2c2415; --line-soft:#221b10;
+      --text:#ece3d2; --text-dim:#a3947a; --muted:#6f6350;
+      --accent:#e8a33d; --accent-hi:#ffc564; --accent-contrast:#1a1206;
+      --accent-dim:#4a3c20; --tag-bg:#211909; --tag-line:#3b2f18;
+      --ok:#8fbf6f;
+    }
+    [data-theme="circuit"]{              /* 02 · CIRCUIT — electric blue on deep navy */
+      --bg:#0a0e18;  --bg-raise:#0f1524; --panel:#141b2e;
+      --line:#212c45; --line-soft:#182236;
+      --text:#e4eaf6; --text-dim:#94a1bd; --muted:#5e6b87;
+      --accent:#5aa2ff; --accent-hi:#8cc2ff; --accent-contrast:#091020;
+      --accent-dim:#27406b; --tag-bg:#101c33; --tag-line:#27406b;
+      --ok:#57d99a;
+    }
+    [data-theme="mint"]{                 /* 03 · MINT — green signal on deep forest */
+      --bg:#081210;  --bg-raise:#0c1a16; --panel:#10221c;
+      --line:#1d362c; --line-soft:#152a22;
+      --text:#ddeee6; --text-dim:#8fae9f; --muted:#5b7a6b;
+      --accent:#3ddc97; --accent-hi:#7ef0bd; --accent-contrast:#06150e;
+      --accent-dim:#1f5740; --tag-bg:#0c241b; --tag-line:#1f5740;
+      --ok:#3ddc97;
+    }
+    [data-theme="ember"]{                /* 04 · EMBER — coral red on charcoal */
+      --bg:#120c0b;  --bg-raise:#1a1210; --panel:#201613;
+      --line:#352420; --line-soft:#291c18;
+      --text:#f0e4dd; --text-dim:#b29a8e; --muted:#7a6459;
+      --accent:#ff6b5e; --accent-hi:#ff9a8d; --accent-contrast:#1d0c09;
+      --accent-dim:#6b3128; --tag-bg:#2a1410; --tag-line:#5a2a22;
+      --ok:#8fbf6f;
+    }
+    [data-theme="paper"]{                /* 05 · PAPER — cobalt ink on warm light */
+      --bg:#f1ece1;  --bg-raise:#f8f4ea; --panel:#fffdf6;
+      --line:#d8cdb6; --line-soft:#e4dcc9;
+      --text:#241e13; --text-dim:#6b604c; --muted:#9a8d74;
+      --accent:#2456c8; --accent-hi:#1a44a3; --accent-contrast:#fbf8f0;
+      --accent-dim:#aebde0; --tag-bg:#e7ecf8; --tag-line:#bcc9e8;
+      --ok:#2e8b57;
     }
 
-    .terminal {
-      background-color: rgba(15, 23, 42, 0.8);
-      border: 1px solid #1e293b;
-      border-radius: 0.5rem;
-      box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+    :root{
+      --display:"Big Shoulders", sans-serif;
+      --body:"Archivo", sans-serif;
+      --mono:"IBM Plex Mono", monospace;
+      --max:1180px;
     }
 
-    .terminal-header {
-      background-color: #1e293b;
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
+    *{ margin:0; padding:0; box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      background:var(--bg);
+      color:var(--text);
+      font-family:var(--body);
+      font-size:16px;
+      line-height:1.65;
+      -webkit-font-smoothing:antialiased;
+      overflow-x:hidden;
+      transition:background .35s ease, color .35s ease;
+    }
+    body::before{ /* faint blueprint grid */
+      content:"";
+      position:fixed; inset:0;
+      background-image:
+        linear-gradient(var(--line-soft) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+      background-size:56px 56px;
+      opacity:.28;
+      pointer-events:none;
+      z-index:0;
+    }
+    main, header.site, footer.site, .ticker{ position:relative; z-index:1; }
+
+    a{ color:inherit; }
+    ::selection{ background:var(--accent); color:var(--accent-contrast); }
+
+    a:focus-visible, button:focus-visible{
+      outline:2px solid var(--accent);
+      outline-offset:3px;
+      border-radius:2px;
     }
 
-    .terminal-body {
-      padding: 1.5rem;
+    .wrap{ max-width:var(--max); margin:0 auto; padding:0 24px; }
+    .mono{ font-family:var(--mono); }
+
+    /* ---------- status ticker ---------- */
+    .ticker{
+      border-bottom:1px solid var(--line);
+      background:var(--bg-raise);
+      font-family:var(--mono);
+      font-size:11px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--text-dim);
+    }
+    .ticker .wrap{
+      display:flex; gap:28px; align-items:center;
+      height:34px; overflow-x:auto; white-space:nowrap;
+      scrollbar-width:none;
+    }
+    .ticker .wrap::-webkit-scrollbar{ display:none; }
+    .dot{
+      display:inline-block; width:7px; height:7px; border-radius:50%;
+      background:var(--ok); margin-right:7px;
+      box-shadow:0 0 8px var(--ok);
+      animation:pulse 2.4s ease-in-out infinite;
+    }
+    @keyframes pulse{ 0%,100%{opacity:1} 50%{opacity:.35} }
+    .ticker .spacer{ flex:1; }
+    .ticker .hi{ color:var(--accent); }
+
+    /* ---------- nav ---------- */
+    .nav{
+      position:sticky; top:0; z-index:50;
+      background:color-mix(in srgb, var(--bg) 82%, transparent);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav .wrap{
+      display:flex; align-items:center; justify-content:space-between;
+      height:62px; gap:18px;
+    }
+    .mark{
+      font-family:var(--display);
+      font-weight:800; font-size:24px; letter-spacing:.04em;
+      text-decoration:none; color:var(--text);
+      display:flex; align-items:baseline; gap:8px;
+      flex-shrink:0;
+    }
+    .mark span{ color:var(--accent); }
+    .mark .ver{
+      font-family:var(--mono); font-size:10px; color:var(--muted);
+      letter-spacing:.1em; font-weight:400;
+    }
+    .nav-links{ display:flex; gap:26px; margin-left:auto; }
+    .nav-links a{
+      font-family:var(--mono); font-size:12px; letter-spacing:.1em;
+      text-transform:uppercase; text-decoration:none; color:var(--text-dim);
+      transition:color .2s;
+    }
+    .nav-links a:hover{ color:var(--accent-hi); }
+
+    /* theme picker */
+    .theme-picker{ display:flex; gap:8px; align-items:center; margin-left:auto; }
+    .nav-links + .theme-picker{ margin-left:0; }
+    .theme-picker button{
+      width:18px; height:18px; border-radius:50%;
+      border:2px solid var(--line); cursor:pointer;
+      transition:transform .15s, border-color .15s;
+      padding:0;
+    }
+    .theme-picker button:hover{ transform:scale(1.2); }
+    .theme-picker button[aria-pressed="true"]{ border-color:var(--text); transform:scale(1.15); }
+    .sw-bronze{ background:#e8a33d; }
+    .sw-circuit{ background:#5aa2ff; }
+    .sw-mint{ background:#3ddc97; }
+    .sw-ember{ background:#ff6b5e; }
+    .sw-paper{ background:#f1ece1; }
+
+    .nav-cta{
+      font-family:var(--mono); font-size:12px; letter-spacing:.1em;
+      text-transform:uppercase; text-decoration:none;
+      color:var(--accent-contrast); background:var(--accent);
+      padding:8px 16px; border-radius:3px; font-weight:600;
+      transition:background .2s, transform .2s;
+      flex-shrink:0;
+    }
+    .nav-cta:hover{ background:var(--accent-hi); transform:translateY(-1px); }
+
+    /* ---------- hero ---------- */
+    .hero{ padding:84px 0 30px; }
+    .eyebrow{
+      font-family:var(--mono); font-size:12px; letter-spacing:.18em;
+      text-transform:uppercase; color:var(--accent);
+      display:flex; align-items:center; gap:12px;
+      margin-bottom:22px;
+    }
+    .eyebrow::before{
+      content:""; width:34px; height:1px; background:var(--accent);
+    }
+    h1{
+      font-family:var(--display);
+      font-weight:800;
+      font-size:clamp(52px, 9vw, 118px);
+      line-height:.94;
+      letter-spacing:.005em;
+      text-transform:uppercase;
+      max-width:15ch;
+    }
+    h1 em{ font-style:normal; color:var(--accent); }
+    .hero-sub{
+      margin-top:26px;
+      max-width:600px;
+      color:var(--text-dim);
+      font-size:17px;
+    }
+    .hero-sub b{ color:var(--text); font-weight:600; }
+    .hero-actions{ margin-top:34px; display:flex; gap:14px; flex-wrap:wrap; }
+    .btn{
+      font-family:var(--mono); font-size:13px; letter-spacing:.08em;
+      text-transform:uppercase; text-decoration:none; font-weight:600;
+      padding:13px 24px; border-radius:3px;
+      transition:transform .2s, background .2s, border-color .2s, color .2s;
+      display:inline-block;
+    }
+    .btn.solid{ background:var(--accent); color:var(--accent-contrast); }
+    .btn.solid:hover{ background:var(--accent-hi); transform:translateY(-2px); }
+    .btn.ghost{ border:1px solid var(--line); color:var(--text-dim); }
+    .btn.ghost:hover{ border-color:var(--accent); color:var(--accent-hi); transform:translateY(-2px); }
+
+    /* staggered load-in */
+    .rise{ opacity:0; transform:translateY(18px); animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+    .d1{ animation-delay:.05s } .d2{ animation-delay:.16s } .d3{ animation-delay:.27s }
+    .d4{ animation-delay:.38s } .d5{ animation-delay:.5s }
+    @keyframes rise{ to{ opacity:1; transform:none; } }
+
+    /* ---------- architecture diagram ---------- */
+    .pipeline{
+      margin:64px 0 0;
+      border:1px solid var(--line);
+      border-radius:6px;
+      background:linear-gradient(180deg, var(--bg-raise), var(--bg));
+      overflow:hidden;
+    }
+    .pipeline-bar{
+      display:flex; align-items:center; gap:10px;
+      padding:10px 16px;
+      border-bottom:1px solid var(--line);
+      font-family:var(--mono); font-size:11px; letter-spacing:.1em;
+      text-transform:uppercase; color:var(--muted);
+    }
+    .pipeline-bar i{
+      width:9px; height:9px; border-radius:50%; display:inline-block;
+      background:var(--line);
+    }
+    .pipeline-bar i:nth-child(1){ background:#c4564a; }
+    .pipeline-bar i:nth-child(2){ background:var(--accent); }
+    .pipeline-bar i:nth-child(3){ background:var(--ok); }
+    .pipeline-bar .label{ margin-left:6px; }
+    .pipeline-bar .state{ margin-left:auto; color:var(--ok); }
+    .pipeline svg{ display:block; width:100%; height:auto; }
+    .node-box{ fill:var(--panel); stroke:var(--line); }
+    .node-box.hot{ stroke:var(--accent); }
+    .node-label{ font-family:var(--mono); font-size:11.5px; fill:var(--text); letter-spacing:.06em; }
+    .node-sub{ font-family:var(--mono); font-size:9.5px; fill:var(--muted); letter-spacing:.06em; }
+    .edge{ stroke:var(--accent-dim); stroke-width:1.4; fill:none; }
+    .packet{ fill:var(--accent); }
+    .packet.green{ fill:var(--ok); }
+
+    /* ---------- metrics ---------- */
+    .metrics{
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      margin-top:84px;
+      background:var(--bg-raise);
+    }
+    .metrics .wrap{ display:grid; grid-template-columns:repeat(4,1fr); }
+    .metric{ padding:34px 26px; border-left:1px solid var(--line); }
+    .metric:first-child{ border-left:none; }
+    .metric .num{
+      font-family:var(--display); font-weight:800;
+      font-size:clamp(38px, 4.4vw, 58px); line-height:1;
+      color:var(--accent);
+      font-variant-numeric:tabular-nums;
+    }
+    .metric .num small{ font-size:.55em; }
+    .metric .lab{
+      font-family:var(--mono); font-size:11px; letter-spacing:.12em;
+      text-transform:uppercase; color:var(--text-dim); margin-top:10px;
     }
 
-    .prompt {
-      color: #10b981;
+    /* ---------- sections ---------- */
+    section{ padding:104px 0 0; }
+    .sec-head{
+      display:flex; align-items:baseline; gap:18px; margin-bottom:44px;
+      border-bottom:1px solid var(--line); padding-bottom:18px;
+    }
+    .sec-head .idx{ font-family:var(--mono); font-size:13px; color:var(--accent); letter-spacing:.1em; }
+    h2{
+      font-family:var(--display); font-weight:800; text-transform:uppercase;
+      font-size:clamp(34px, 4.6vw, 56px); line-height:1; letter-spacing:.01em;
+    }
+    .sec-head .note{
+      margin-left:auto; font-family:var(--mono); font-size:11px;
+      letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
+      display:none;
+    }
+    @media(min-width:760px){ .sec-head .note{ display:block; } }
+
+    /* scroll reveal */
+    .reveal{ opacity:0; transform:translateY(26px); transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+    .reveal.in{ opacity:1; transform:none; }
+
+    /* ---------- about ---------- */
+    .about-grid{ display:grid; grid-template-columns:1.4fr 1fr; gap:56px; }
+    .about-grid p{ margin-bottom:20px; color:var(--text-dim); font-size:17px; }
+    .about-grid p b{ color:var(--text); font-weight:600; }
+    .about-grid p .hl{ color:var(--accent-hi); font-weight:500; }
+    [data-theme="paper"] .about-grid p .hl{ color:var(--accent); }
+    .spec{
+      border:1px solid var(--line); border-radius:6px; background:var(--bg-raise);
+      font-family:var(--mono); font-size:13px;
+      align-self:start;
+    }
+    .spec-row{
+      display:flex; justify-content:space-between; gap:16px;
+      padding:13px 18px; border-bottom:1px solid var(--line-soft);
+    }
+    .spec-row:last-child{ border-bottom:none; }
+    .spec-row .k{ color:var(--muted); text-transform:uppercase; font-size:11px; letter-spacing:.1em; padding-top:2px; }
+    .spec-row .v{ color:var(--text); text-align:right; }
+    .spec-row .v.ok{ color:var(--ok); }
+
+    /* ---------- experience ---------- */
+    .xp{ display:grid; grid-template-columns:150px 1fr; gap:0 40px; position:relative; }
+    .xp + .xp{ margin-top:8px; }
+    .xp .when{
+      font-family:var(--mono); font-size:12px; letter-spacing:.08em;
+      color:var(--accent); text-transform:uppercase; padding-top:30px;
+      position:sticky; top:80px; align-self:start; height:fit-content;
+    }
+    .xp .body{
+      border-left:1px solid var(--line);
+      padding:26px 0 46px 40px;
+      position:relative;
+    }
+    .xp .body::before{
+      content:""; position:absolute; left:-5px; top:36px;
+      width:9px; height:9px; border-radius:50%;
+      background:var(--bg); border:2px solid var(--accent);
+    }
+    .xp h3{
+      font-family:var(--display); font-weight:700; text-transform:uppercase;
+      font-size:27px; letter-spacing:.02em; line-height:1.1;
+    }
+    .xp .role{
+      font-family:var(--mono); font-size:12px; letter-spacing:.1em;
+      text-transform:uppercase; color:var(--text-dim); margin-top:6px;
+    }
+    .engagement{
+      margin-top:26px; border:1px solid var(--line); border-radius:6px;
+      background:var(--bg-raise); padding:22px 24px;
+      transition:border-color .25s, transform .25s;
+    }
+    .engagement:hover{ border-color:var(--accent-dim); transform:translateX(4px); }
+    .engagement h4{ font-size:16px; font-weight:600; color:var(--text); }
+    .engagement .tagline{
+      font-family:var(--mono); font-size:11px; color:var(--accent);
+      letter-spacing:.1em; text-transform:uppercase; margin-top:3px;
+    }
+    .engagement ul{ margin:14px 0 0; padding-left:18px; color:var(--text-dim); font-size:15px; }
+    .engagement li{ margin-bottom:7px; }
+    .engagement li::marker{ color:var(--accent); }
+    .engagement li b{ color:var(--text); font-weight:600; }
+    .tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
+    .tag{
+      font-family:var(--mono); font-size:11px; letter-spacing:.04em;
+      color:var(--accent-hi);
+      border:1px solid var(--tag-line); background:var(--tag-bg);
+      padding:4px 10px; border-radius:3px;
+    }
+    [data-theme="paper"] .tag{ color:var(--accent); }
+
+    /* ---------- projects ---------- */
+    .proj-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
+    .proj{
+      border:1px solid var(--line); border-radius:6px;
+      background:linear-gradient(165deg, var(--bg-raise), var(--bg) 70%);
+      padding:30px 28px;
+      position:relative; overflow:hidden;
+      transition:border-color .25s, transform .25s, box-shadow .25s;
+      display:flex; flex-direction:column;
+    }
+    .proj::after{
+      content:""; position:absolute; top:0; left:0; right:0; height:2px;
+      background:linear-gradient(90deg, var(--accent), transparent 70%);
+      opacity:0; transition:opacity .25s;
+    }
+    .proj:hover{
+      border-color:var(--accent-dim); transform:translateY(-5px);
+      box-shadow:0 18px 40px -18px color-mix(in srgb, var(--accent) 22%, transparent);
+    }
+    .proj:hover::after{ opacity:1; }
+    .proj.featured{ grid-column:1 / -1; }
+    .proj .pid{
+      font-family:var(--mono); font-size:11px; letter-spacing:.14em;
+      color:var(--muted); text-transform:uppercase;
+    }
+    .proj h3{
+      font-family:var(--display); font-weight:700; text-transform:uppercase;
+      font-size:30px; letter-spacing:.02em; margin-top:8px; line-height:1.05;
+    }
+    .proj .what{
+      font-family:var(--mono); font-size:12px; color:var(--accent);
+      letter-spacing:.08em; text-transform:uppercase; margin-top:5px;
+    }
+    .proj ul{ margin:16px 0 0; padding-left:18px; color:var(--text-dim); font-size:15px; flex:1; }
+    .proj li{ margin-bottom:7px; }
+    .proj li::marker{ color:var(--accent); }
+    .proj li b{ color:var(--text); font-weight:600; }
+
+    /* ---------- skills ---------- */
+    .skill-table{ border:1px solid var(--line); border-radius:6px; overflow:hidden; background:var(--bg-raise); }
+    .skill-row{ display:grid; grid-template-columns:210px 1fr; border-bottom:1px solid var(--line); }
+    .skill-row:last-child{ border-bottom:none; }
+    .skill-row .cat{
+      padding:24px;
+      font-family:var(--mono); font-size:12px; letter-spacing:.12em;
+      text-transform:uppercase; color:var(--accent);
+      border-right:1px solid var(--line);
+      display:flex; align-items:flex-start; gap:10px;
+    }
+    .skill-row .cat::before{ content:"▸"; color:var(--muted); }
+    .skill-row .items{ padding:20px 24px; display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+    .chip{
+      font-family:var(--mono); font-size:13px;
+      border:1px solid var(--line); border-radius:3px;
+      padding:7px 13px; background:var(--bg);
+      transition:border-color .2s, transform .2s;
+      cursor:default;
+    }
+    .chip:hover{ border-color:var(--accent); transform:translateY(-2px); }
+    .chip .yrs{ color:var(--muted); font-size:11px; margin-left:7px; }
+
+    /* ---------- contact ---------- */
+    .contact-box{
+      border:1px solid var(--line); border-radius:8px;
+      background:
+        radial-gradient(900px 320px at 18% 0%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 60%),
+        var(--bg-raise);
+      padding:clamp(40px, 6vw, 80px);
+    }
+    .contact-box h2{ max-width:16ch; }
+    .contact-box .lead{ margin-top:18px; color:var(--text-dim); max-width:540px; font-size:17px; }
+    .contact-actions{ margin-top:36px; display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+    .copy-btn{
+      font-family:var(--mono); font-size:13px; letter-spacing:.06em;
+      background:transparent; border:1px solid var(--line); color:var(--text-dim);
+      padding:13px 20px; border-radius:3px; cursor:pointer;
+      transition:border-color .2s, color .2s, transform .2s;
+    }
+    .copy-btn:hover{ border-color:var(--accent); color:var(--accent-hi); transform:translateY(-2px); }
+    [data-theme="paper"] .copy-btn:hover{ color:var(--accent); }
+    .socials{ margin-top:40px; display:flex; gap:24px; }
+    .socials a{
+      font-family:var(--mono); font-size:12px; letter-spacing:.12em;
+      text-transform:uppercase; text-decoration:none; color:var(--text-dim);
+      transition:color .2s;
+    }
+    .socials a:hover{ color:var(--accent-hi); }
+    [data-theme="paper"] .socials a:hover{ color:var(--accent); }
+    .socials a::before{ content:"↗ "; color:var(--accent); }
+
+    /* ---------- footer ---------- */
+    footer.site{ margin-top:104px; border-top:1px solid var(--line); padding:30px 0 40px; }
+    footer.site .wrap{
+      display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;
+      font-family:var(--mono); font-size:11.5px; letter-spacing:.08em;
+      text-transform:uppercase; color:var(--muted);
+    }
+    footer.site .hi{ color:var(--accent); }
+
+    /* ---------- responsive ---------- */
+    @media(max-width:920px){
+      .about-grid{ grid-template-columns:1fr; gap:36px; }
+      .metrics .wrap{ grid-template-columns:repeat(2,1fr); }
+      .metric{ border-top:1px solid var(--line); }
+      .metric:nth-child(1), .metric:nth-child(2){ border-top:none; }
+      .metric:nth-child(3){ border-left:none; }
+      .proj-grid{ grid-template-columns:1fr; }
+      .xp{ grid-template-columns:1fr; }
+      .xp .when{ position:static; padding:0 0 4px; }
+      .xp .body{ padding-left:28px; }
+      .skill-row{ grid-template-columns:1fr; }
+      .skill-row .cat{ border-right:none; border-bottom:1px solid var(--line-soft); padding-bottom:14px; }
+    }
+    @media(max-width:680px){
+      .nav-links{ display:none; }
+      section{ padding-top:78px; }
     }
 
-    .command {
-      color: #3b82f6;
-    }
-
-    .comment {
-      color: #64748b;
-    }
-
-    .typewriter {
-      overflow: hidden;
-      border-right: 2px solid #3b82f6;
-      white-space: nowrap;
-      margin: 0 auto;
-      letter-spacing: 0.15em;
-      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    }
-
-    @keyframes typing {
-      from {
-        width: 0
+    @media(prefers-reduced-motion: reduce){
+      *, *::before, *::after{
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:.01ms !important;
       }
-
-      to {
-        width: 100%
-      }
-    }
-
-    @keyframes blink-caret {
-
-      from,
-      to {
-        border-color: transparent
-      }
-
-      50% {
-        border-color: #3b82f6
-      }
-    }
-
-    .skill-bar {
-      background-color: #1e293b;
-      height: 8px;
-      border-radius: 4px;
-    }
-
-    .skill-progress {
-      background: linear-gradient(90deg, #3b82f6, #10b981);
-      height: 100%;
-      border-radius: 4px;
-    }
-
-    .project-card {
-      background: linear-gradient(145deg, #0f172a, #1e293b);
-      border: 1px solid #334155;
-      transition: all 0.3s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
-      border-color: #3b82f6;
-    }
-
-    .glow {
-      text-shadow: 0 0 10px rgba(59, 130, 246, 0.7);
-    }
-
-    .skill-tag {
-      background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(16, 185, 129, 0.1));
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      font-size: 0.875rem;
-      transition: all 0.2s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .skill-tag:hover {
-      border-color: #3b82f6;
-      background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(16, 185, 129, 0.15));
-      transform: translateY(-2px);
+      html{ scroll-behavior:auto; }
+      .rise{ opacity:1; transform:none; }
+      .reveal{ opacity:1; transform:none; }
     }
   </style>
 </head>
 
-<body class="min-h-screen">
-  <!-- Terminal-style Navigation -->
-  <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
-    <div class="flex items-center space-x-4">
-      <span class="text-primary text-xl font-bold">danial@portfolio:~</span>
-    </div>
-    <div class="hidden md:flex space-x-6">
-      <a href="#about" class="text-gray-400 hover:text-primary transition">about</a>
-      <a href="#experience" class="text-gray-400 hover:text-primary transition">experience</a>
-      <a href="#skills" class="text-gray-400 hover:text-primary transition">skills</a>
-      <a href="#projects" class="text-gray-400 hover:text-primary transition">projects</a>
-      <a href="#contact" class="text-gray-400 hover:text-primary transition">contact</a>
-    </div>
-  </nav>
+<body>
 
-  <!-- Hero Section with Terminal Effect -->
-  <section class="container mx-auto px-4 py-20 md:py-32">
-    <div class="terminal max-w-4xl mx-auto">
-      <div class="terminal-header flex items-center px-4 py-2">
-        <div class="flex space-x-2">
-          <div class="w-3 h-3 rounded-full bg-red-500"></div>
-          <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-          <div class="w-3 h-3 rounded-full bg-green-500"></div>
+  <!-- status ticker -->
+  <div class="ticker" role="presentation">
+    <div class="wrap">
+      <span><span class="dot"></span>All systems operational</span>
+      <span>Riyadh, KSA · <span id="clock">--:--</span> AST</span>
+      <span class="spacer"></span>
+      <span class="hi">Open to new engagements</span>
+    </div>
+  </div>
+
+  <!-- nav -->
+  <header class="site nav">
+    <div class="wrap">
+      <a class="mark" href="#top">DG<span>.</span> <span class="ver">v2.0</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+      </nav>
+      <div class="theme-picker" role="group" aria-label="Color theme">
+        <button class="sw-bronze"  data-theme-pick="bronze"  aria-pressed="true"  title="Bronze"  aria-label="Bronze theme"></button>
+        <button class="sw-circuit" data-theme-pick="circuit" aria-pressed="false" title="Circuit" aria-label="Circuit theme"></button>
+        <button class="sw-mint"    data-theme-pick="mint"    aria-pressed="false" title="Mint"    aria-label="Mint theme"></button>
+        <button class="sw-ember"   data-theme-pick="ember"   aria-pressed="false" title="Ember"   aria-label="Ember theme"></button>
+        <button class="sw-paper"   data-theme-pick="paper"   aria-pressed="false" title="Paper"   aria-label="Paper theme"></button>
+      </div>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" style="padding-top:84px;">
+      <div class="wrap">
+        <p class="eyebrow rise d1">Danial Ghazali — Solution Architect · Full Stack Developer</p>
+        <h1 class="rise d2">I design &amp; build software at <em>national scale</em>.</h1>
+        <p class="hero-sub rise d3">
+          10+ years across the full stack — <b>Golang and Laravel backends</b>, <b>React and Vue frontends</b>,
+          microservices that hold <b>99.9% uptime</b> — plus the data engineering depth
+          (Snowflake, Airflow) to handle whatever the platform demands.
+        </p>
+        <div class="hero-actions rise d4">
+          <a class="btn solid" href="#projects">View work</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <!-- signature: live architecture diagram -->
+        <div class="pipeline rise d5" aria-label="Animated diagram of a full-stack architecture: web, mobile and integration clients flowing through an API gateway into Golang and Laravel microservices, then to databases and data pipelines">
+          <div class="pipeline-bar">
+            <i></i><i></i><i></i>
+            <span class="label">architecture — live traffic</span>
+            <span class="state">● 99.9% up</span>
+          </div>
+          <svg viewBox="0 0 960 330" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- edges -->
+            <path id="e1" class="edge" d="M178 75  C 260 75, 280 140, 352 150"/>
+            <path id="e2" class="edge" d="M178 165 L 352 165"/>
+            <path id="e3" class="edge" d="M178 255 C 260 255, 280 190, 352 180"/>
+            <path id="e4" class="edge" d="M470 165 L 560 165"/>
+            <path id="e5" class="edge" d="M692 165 C 740 165, 748 95, 800 90"/>
+            <path id="e6" class="edge" d="M692 165 C 740 165, 748 235, 800 240"/>
+
+            <!-- clients -->
+            <g>
+              <rect class="node-box" x="58" y="50" width="120" height="50" rx="4"/>
+              <text class="node-label" x="74" y="72">WEB APP</text>
+              <text class="node-sub" x="74" y="88">React · Vue</text>
+
+              <rect class="node-box" x="58" y="140" width="120" height="50" rx="4"/>
+              <text class="node-label" x="74" y="162">MOBILE</text>
+              <text class="node-sub" x="74" y="178">iOS · Android</text>
+
+              <rect class="node-box" x="58" y="230" width="120" height="50" rx="4"/>
+              <text class="node-label" x="74" y="252">PARTNERS</text>
+              <text class="node-sub" x="74" y="268">3rd-party APIs</text>
+            </g>
+
+            <!-- gateway -->
+            <rect class="node-box hot" x="352" y="135" width="118" height="60" rx="4"/>
+            <text class="node-label" x="368" y="160">GATEWAY</text>
+            <text class="node-sub" x="368" y="177">Gin · REST · Auth</text>
+
+            <!-- services -->
+            <rect class="node-box hot" x="560" y="135" width="132" height="60" rx="4"/>
+            <text class="node-label" x="576" y="160">SERVICES</text>
+            <text class="node-sub" x="576" y="177">Golang · Laravel</text>
+
+            <!-- outputs -->
+            <rect class="node-box" x="800" y="65" width="128" height="50" rx="4"/>
+            <text class="node-label" x="816" y="87">DATA STORES</text>
+            <text class="node-sub" x="816" y="103">MongoDB · SQL</text>
+
+            <rect class="node-box" x="800" y="215" width="128" height="50" rx="4"/>
+            <text class="node-label" x="816" y="237">PIPELINES</text>
+            <text class="node-sub" x="816" y="253">Airflow · ETL</text>
+
+            <text class="node-sub" x="560" y="218">↳ 5+ Go microservices in production</text>
+
+            <!-- packets -->
+            <circle class="packet" r="3.4"><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#e1"/></animateMotion></circle>
+            <circle class="packet" r="3.4"><animateMotion dur="2.6s" begin="0.9s" repeatCount="indefinite"><mpath href="#e2"/></animateMotion></circle>
+            <circle class="packet" r="3.4"><animateMotion dur="3.6s" begin="1.6s" repeatCount="indefinite"><mpath href="#e3"/></animateMotion></circle>
+            <circle class="packet" r="3.4"><animateMotion dur="1.9s" begin="0.4s" repeatCount="indefinite"><mpath href="#e4"/></animateMotion></circle>
+            <circle class="packet green" r="3.4"><animateMotion dur="2.8s" begin="1.1s" repeatCount="indefinite"><mpath href="#e5"/></animateMotion></circle>
+            <circle class="packet green" r="3.4"><animateMotion dur="2.8s" begin="2.2s" repeatCount="indefinite"><mpath href="#e6"/></animateMotion></circle>
+          </svg>
         </div>
       </div>
-      <div class="terminal-body">
-        <div class="mb-4">
-          <span class="prompt">$</span>
-          <span class="command"> whoami</span>
-        </div>
-        <div class="typewriter text-2xl md:text-4xl font-bold mb-6">
-          Danial Ghazali - Solution Architecture
-        </div>
-        <div class="mb-4">
-          <span class="prompt">$</span>
-          <span class="command"> cat bio.txt</span>
-        </div>
-        <p class="mb-6">
-          <span class="comment">// 10+ years building scalable systems</span><br>
-          <span class="comment">// Golang, Laravel, Microservices expert</span><br>
-          <span class="comment">// Solution Architecture specialist</span>
-        </p>
-        <div class="mb-4">
-          <span class="prompt">$</span>
-          <span class="command"> ./connect.sh</span>
-        </div>
-        <div class="flex space-x-4">
-          <a href="#contact" class="px-4 py-2 bg-primary text-dark rounded hover:bg-blue-400 transition">Contact Me</a>
-          <a href="#projects"
-            class="px-4 py-2 border border-primary text-primary rounded hover:bg-blue-900/30 transition">View Work</a>
-        </div>
+    </section>
+
+    <!-- METRICS -->
+    <div class="metrics reveal">
+      <div class="wrap">
+        <div class="metric"><div class="num"><span data-count="10">0</span><small>+</small></div><div class="lab">Years building production systems</div></div>
+        <div class="metric"><div class="num"><span data-count="900">0</span><small>K+</small></div><div class="lab">Tickets scaled on a single platform</div></div>
+        <div class="metric"><div class="num"><span data-count="99.9" data-decimals="1">0</span><small>%</small></div><div class="lab">Uptime on Golang microservices</div></div>
+        <div class="metric"><div class="num"><span data-count="50">0</span><small>%</small></div><div class="lab">Faster APIs after redesign</div></div>
       </div>
     </div>
-  </section>
-  <!-- About Section -->
-  <section id="about" class="container mx-auto px-4 py-20">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6 glow">
-        <span class="text-primary">#</span> about_me
-      </h2>
-      <div class="terminal p-6">
-        <p class="mb-4">
-          <span class="prompt">></span> I'm a <span class="text-primary">Solution Architecture & Senior Full Stack Developer</span>
-          with 10+ years of experience building scalable systems for leading organizations.
-        </p>
-        <p class="mb-4">
-          <span class="prompt">></span> Specializing in <span class="text-secondary">Golang/Gin</span>, <span
-            class="text-secondary">Laravel/PHP</span>, and <span class="text-secondary">Vue.js/React</span>, I architect
-          solutions that handle <span class="text-primary">15,000+ daily tickets</span> and scale to <span
-            class="text-primary">900k+ records</span>.
-        </p>
-        <p class="mb-4">
-          <span class="prompt">></span> My expertise spans <span class="text-secondary">microservices</span>, <span
-            class="text-secondary">database design</span>, and <span class="text-secondary">performance
-            optimization</span>, with proven results in reducing costs by 35% and improving API speeds by 50%.
-        </p>
-        <p>
-          <span class="prompt">></span> Beyond code, I excel in <span class="text-secondary">Agile leadership</span>,
-          <span class="text-secondary">client partnerships</span>, and mentoring teams of 5+ developers to deliver
-          exceptional products.
-        </p>
-      </div>
-    </div>
-  </section>
-  <!-- Skills Section -->
-  <section id="skills" class="container mx-auto px-4 py-20">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold mb-8 glow">
-        <span class="text-primary">#</span> skills
-      </h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Backend -->
-        <div class="terminal p-6 rounded-lg">
-          <h3 class="text-lg font-bold text-primary mb-4 flex items-center">
-            <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
-            Backend
-          </h3>
-          <div class="flex flex-wrap gap-3">
-            <span class="skill-tag">Golang/Gin <span class="text-gray-500">3y</span></span>
-            <span class="skill-tag">Laravel/PHP <span class="text-gray-500">8y</span></span>
-            <span class="skill-tag">Node.js <span class="text-gray-500">2y</span></span>
-            <span class="skill-tag">Database Design <span class="text-gray-500">7y</span></span>
-          </div>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="idx">01</span>
+          <h2>About</h2>
+          <span class="note">// who I am</span>
         </div>
-
-        <!-- Frontend -->
-        <div class="terminal p-6 rounded-lg">
-          <h3 class="text-lg font-bold text-primary mb-4 flex items-center">
-            <span class="w-2 h-2 bg-secondary rounded-full mr-2"></span>
-            Frontend
-          </h3>
-          <div class="flex flex-wrap gap-3">
-            <span class="skill-tag">Vue.js <span class="text-gray-500">5y</span></span>
-            <span class="skill-tag">React <span class="text-gray-500">3y</span></span>
-            <span class="skill-tag">Tailwind CSS <span class="text-gray-500">2y</span></span>
-            <span class="skill-tag">Bootstrap <span class="text-gray-500">5y</span></span>
-          </div>
-        </div>
-
-        <!-- Data Engineering -->
-        <div class="terminal p-6 rounded-lg">
-          <h3 class="text-lg font-bold text-primary mb-4 flex items-center">
-            <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-            Data Engineering
-          </h3>
-          <div class="flex flex-wrap gap-3">
-            <span class="skill-tag">Python <span class="text-gray-500">4y</span></span>
-            <span class="skill-tag">Apache Airflow <span class="text-gray-500">3y</span></span>
-            <span class="skill-tag">MS SQL <span class="text-gray-500">5y</span></span>
-            <span class="skill-tag">ETL Pipelines <span class="text-gray-500">4y</span></span>
-          </div>
-        </div>
-
-        <!-- DevOps & Tools -->
-        <div class="terminal p-6 rounded-lg">
-          <h3 class="text-lg font-bold text-primary mb-4 flex items-center">
-            <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-            DevOps & Tools
-          </h3>
-          <div class="flex flex-wrap gap-3">
-            <span class="skill-tag">Docker <span class="text-gray-500">3y</span></span>
-            <span class="skill-tag">AWS <span class="text-gray-500">3y</span></span>
-            <span class="skill-tag">CI/CD <span class="text-gray-500">5y</span></span>
-            <span class="skill-tag">Kafka <span class="text-gray-500">1y</span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Experience Section -->
-  <section id="experience" class="container mx-auto px-4 py-20">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6 glow">
-        <span class="text-primary">#</span> experience
-      </h2>
-
-      <div class="space-y-8">
-        <!-- Ascend Solutions -->
-        <div class="terminal p-6">
-          <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-            <h3 class="text-xl font-bold text-primary">Ascend Solutions, Saudi Arabia</h3>
-            <span class="text-gray-400">2020 - Present</span>
-          </div>
-          <h4 class="text-lg font-semibold mb-2">Solution Architecture</h4>
-
-          <!-- CHI - Solution Architecture -->
-          <div class="mb-6">
-            <h5 class="font-medium text-secondary mb-2">Council of Health Insurance (CHI) - National Health Data Platform</h5>
-            <p class="text-sm text-gray-400 mb-2 italic">Solution Architecture</p>
-            <ul class="list-disc pl-6 space-y-2">
-              <li>Worked as a Digital Consultant on large-scale healthcare data platforms supporting <span class="text-secondary">nationwide insurance and regulatory reporting</span></li>
-              <li>Designed and built <span class="text-secondary">semantic layers</span> to standardize business metrics and KPIs</li>
-              <li>Worked extensively with <span class="text-secondary">big data pipelines</span>, handling high-volume, high-velocity healthcare datasets</li>
-              <li>Optimized data models and transformations for <span class="text-secondary">executive and regulatory dashboards</span></li>
-              <li>Translated complex healthcare rules into scalable data models and reusable data assets</li>
-            </ul>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Python</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">SQL</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Airflow</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Big Data Pipelines</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Semantic Layer Design</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Data Warehousing</span>
-            </div>
-          </div>
-
-          <!-- HHC - Solution Architecture -->
-          <div class="mb-6">
-            <h5 class="font-medium text-secondary mb-2">Health Holding Company (HHC) - National Healthcare Integration Platform</h5>
-            <p class="text-sm text-gray-400 mb-2 italic">Solution Architecture</p>
-            <ul class="list-disc pl-6 space-y-2">
-              <li>Worked as a Digital Consultant building and managing <span class="text-secondary">large-scale healthcare data integration platforms</span></li>
-              <li>Led integrations with <span class="text-secondary">120+ hospital HIS systems</span>, handling heterogeneous data formats</li>
-              <li>Designed end-to-end data architecture using <span class="text-secondary">Snowflake, Apache Airflow, and Python</span></li>
-              <li>Built reliable data pipelines for <span class="text-secondary">near-real-time and batch processing</span></li>
-              <li>Integrated healthcare data with national platforms (<span class="text-secondary">Raqeen, NHO</span>) for compliance</li>
-            </ul>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Snowflake</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Apache Airflow</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Python</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">HIS Integration</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Data Engineering</span>
-            </div>
-          </div>
-
-          <!-- NHCC -->
-          <div class="mb-6">
-            <h5 class="font-medium text-secondary mb-2">Nation Health Command Center (NHCC)</h5>
-            <ul class="list-disc pl-6 space-y-2">
-              <li>Built ticketing system handling <span class="text-secondary">1,000+ daily tickets</span>
-              </li>
-              <li>Led team of <span class="text-secondary">15+ developers</span> for nationwide system operations</li>
-              <li>Implemented RPA automation reducing manual effort by <span class="text-secondary">40%</span></li>
-            </ul>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Golang</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MongoDB</span>
-            </div>
-          </div>
-
-          <!-- NUPCO -->
-          <div class="mb-6">
-            <h5 class="font-medium text-secondary mb-2">NUPCO Healthcare Procurement</h5>
-            <ul class="list-disc pl-6 space-y-2">
-              <li>Architected system processing <span class="text-secondary">50,000+ daily tickets</span></li>
-              <li>Migrated to Golang microservices achieving <span class="text-secondary">99.9% uptime</span></li>
-              <li>Automated <span class="text-secondary">35% of tickets</span> through RPA solutions</li>
-            </ul>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Microservices</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Golang</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">GIN</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MongoDB</span>
-            </div>
-          </div>
-
-          <!-- MOH -->
-          <div class="mb-6">
-            <h5 class="font-medium text-secondary mb-2">Ministry of Health - Vaccine System</h5>
-            <ul class="list-disc pl-6 space-y-2">
-              <li>Developed nationwide tracking for <span class="text-secondary">700+ facilities</span></li>
-              <li>Reduced vaccine wastage through real-time inventory management</li>
-            </ul>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MongoDB</span>
-            </div>
-          </div>
-
-          <!-- Hajj -->
+        <div class="about-grid reveal">
           <div>
-            <h5 class="font-medium text-secondary mb-2">Ministry of Hajj - Digital Transformation</h5>
-            <ul class="list-disc pl-6 space-y-2">
-              <li>Processed <span class="text-secondary">5TB+ annual data</span> for 2M+ pilgrims</li>
-              <li>Reduced audit processing time by <span class="text-secondary">70%</span></li>
-            </ul>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Golang</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Python</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Airflow</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MS SQL</span>
-              <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Pandas</span>
+            <p>I'm a <b>Solution Architect and Senior Full Stack Developer</b> based in Saudi Arabia.
+            For the past decade I've designed and shipped end-to-end systems for national programs —
+            health command centers, procurement platforms, esports and events products, and large-scale
+            ticketing systems handling <b>50,000+ tickets a day</b>.</p>
+            <p>My core stack is <span class="hl">Golang</span>, <span class="hl">Laravel/PHP</span>,
+            <span class="hl">React</span> and <span class="hl">Vue.js</span> — I own everything from
+            API design and microservices to the UI people actually use. When a platform needs serious
+            data work, I bring hands-on experience with <span class="hl">Python</span>,
+            <span class="hl">Snowflake</span>, <span class="hl">Apache Airflow</span> and <span class="hl">Kafka</span> too.</p>
+            <p>The results are measurable — <b>35% lower infrastructure costs</b>, <b>50% faster APIs</b>,
+            <b>40% less manual work</b> through automation. Beyond the code, I lead Agile teams of 5–15 developers
+            and translate messy business requirements into systems people can actually maintain.</p>
+          </div>
+          <div class="spec mono" aria-label="Quick facts">
+            <div class="spec-row"><span class="k">Role</span><span class="v">Solution Architect · Full Stack</span></div>
+            <div class="spec-row"><span class="k">Base</span><span class="v">Saudi Arabia</span></div>
+            <div class="spec-row"><span class="k">Experience</span><span class="v">10+ years</span></div>
+            <div class="spec-row"><span class="k">Focus</span><span class="v">Web platforms · Microservices</span></div>
+            <div class="spec-row"><span class="k">Also</span><span class="v">Data engineering · DevOps</span></div>
+            <div class="spec-row"><span class="k">Languages</span><span class="v">Go · PHP · JS · Python</span></div>
+            <div class="spec-row"><span class="k">Status</span><span class="v ok">● Available</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="idx">02</span>
+          <h2>Experience</h2>
+          <span class="note">// 2015 → present</span>
+        </div>
+
+        <!-- Ascend -->
+        <div class="xp reveal">
+          <div class="when">2020 — Present</div>
+          <div class="body">
+            <h3>Ascend Solutions</h3>
+            <p class="role">Solution Architect · Saudi Arabia</p>
+
+            <div class="engagement">
+              <h4>National Health Command Center (NHCC)</h4>
+              <p class="tagline">Nationwide operations platform</p>
+              <ul>
+                <li>Built a ticketing system handling <b>1,000+ daily tickets</b> end to end — Golang services, Laravel APIs, React frontend</li>
+                <li>Led a team of <b>15+ developers</b> for nationwide system operations</li>
+                <li>RPA automation cut manual effort by <b>40%</b></li>
+              </ul>
+              <div class="tags"><span class="tag">Golang</span><span class="tag">Laravel</span><span class="tag">React</span><span class="tag">MongoDB</span></div>
+            </div>
+
+            <div class="engagement">
+              <h4>NUPCO</h4>
+              <p class="tagline">Healthcare procurement at scale</p>
+              <ul>
+                <li>Architected a system processing <b>50,000+ daily tickets</b></li>
+                <li>Migrated to Golang microservices achieving <b>99.9% uptime</b></li>
+                <li>Automated <b>35% of tickets</b> through RPA</li>
+              </ul>
+              <div class="tags"><span class="tag">Golang</span><span class="tag">Gin</span><span class="tag">Microservices</span><span class="tag">MongoDB</span></div>
+            </div>
+
+            <div class="engagement">
+              <h4>Ministry of Health</h4>
+              <p class="tagline">National vaccine system</p>
+              <ul>
+                <li>Built nationwide tracking across <b>700+ facilities</b> — Laravel backend, React frontend</li>
+                <li>Reduced vaccine wastage with real-time inventory management</li>
+              </ul>
+              <div class="tags"><span class="tag">Laravel</span><span class="tag">React</span><span class="tag">MongoDB</span></div>
+            </div>
+
+            <div class="engagement">
+              <h4>Ministry of Hajj &amp; Umrah</h4>
+              <p class="tagline">Digital transformation</p>
+              <ul>
+                <li>Processed <b>5TB+ annual data</b> for 2M+ pilgrims</li>
+                <li>Cut audit processing time by <b>70%</b></li>
+                <li>Built <b>Astrom Studio</b>, the ministry's data operations platform (see Selected Work)</li>
+              </ul>
+              <div class="tags"><span class="tag">Golang</span><span class="tag">Python</span><span class="tag">Airflow</span><span class="tag">ClickHouse</span><span class="tag">MS SQL</span></div>
+            </div>
+
+            <div class="engagement">
+              <h4>Health Holding Company (HHC)</h4>
+              <p class="tagline">National healthcare integration platform</p>
+              <ul>
+                <li>Digital consultant on a platform integrating <b>120+ hospital HIS systems</b> across heterogeneous formats</li>
+                <li>Designed end-to-end architecture on <b>Snowflake, Apache Airflow and Python</b>; near-real-time and batch pipelines</li>
+                <li>Connected healthcare data to national platforms (<b>Raqeem, NHO</b>) for compliance</li>
+              </ul>
+              <div class="tags"><span class="tag">Snowflake</span><span class="tag">Airflow</span><span class="tag">Python</span><span class="tag">HIS integration</span></div>
+            </div>
+
+            <div class="engagement">
+              <h4>Council of Health Insurance (CHI)</h4>
+              <p class="tagline">National health data platform</p>
+              <ul>
+                <li>Digital consultant on platforms powering <b>nationwide insurance and regulatory reporting</b></li>
+                <li>Designed <b>semantic layers</b> standardizing business metrics and KPIs; optimized models behind executive dashboards</li>
+                <li>Turned complex healthcare rules into scalable, reusable data assets</li>
+              </ul>
+              <div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Airflow</span><span class="tag">Data warehousing</span></div>
             </div>
           </div>
         </div>
 
-        <!-- Uxbert Labs -->
-        <div class="terminal p-6">
-          <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-            <h3 class="text-xl font-bold text-primary">Uxbert Labs, Saudi Arabia</h3>
-            <span class="text-gray-400">2018 - 2020</span>
-          </div>
-          <h4 class="text-lg font-semibold mb-2">DevOps & Full-Stack Engineer</h4>
-          <ul class="list-disc pl-6 space-y-2">
-            <li>Managed <span class="text-secondary">50+ servers</span> across AWS/GCP/DigitalOcean</li>
-            <li>Improved API latency by <span class="text-secondary">50%</span> through system refactoring</li>
-            <li>Scaled gaming platform to <span class="text-secondary">10,000+ concurrent users</span></li>
-          </ul>
-          <div class="mt-3 flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MongoDB</span>
+        <!-- Uxbert -->
+        <div class="xp reveal">
+          <div class="when">2018 — 2020</div>
+          <div class="body">
+            <h3>Uxbert Labs</h3>
+            <p class="role">DevOps & Full-Stack Engineer · Saudi Arabia</p>
+            <div class="engagement">
+              <ul style="margin-top:0">
+                <li>Managed <b>50+ servers</b> across AWS, GCP and DigitalOcean</li>
+                <li>Improved API latency by <b>50%</b> through system refactoring</li>
+                <li>Scaled a gaming platform to <b>10,000+ concurrent users</b></li>
+              </ul>
+              <div class="tags"><span class="tag">Laravel</span><span class="tag">React</span><span class="tag">AWS</span><span class="tag">MongoDB</span></div>
+            </div>
           </div>
         </div>
 
         <!-- E Society -->
-        <div class="terminal p-6">
-          <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-            <h3 class="text-xl font-bold text-primary">E Society Company W.L.L</h3>
-            <span class="text-gray-400">2017 - 2018</span>
-          </div>
-          <h4 class="text-lg font-semibold mb-2">Software Developer</h4>
-          <ul class="list-disc pl-6 space-y-2">
-            <li>Developed REST APIs using <span class="text-secondary">Laravel/PHP</span></li>
-            <li>Managed Ubuntu servers on <span class="text-secondary">DigitalOcean</span></li>
-            <li>Implemented full SDLC for web applications</li>
-          </ul>
-          <div class="mt-3 flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">DigitalOcean</span>
+        <div class="xp reveal">
+          <div class="when">2017 — 2018</div>
+          <div class="body">
+            <h3>E Society Company W.L.L</h3>
+            <p class="role">Software Developer</p>
+            <div class="engagement">
+              <ul style="margin-top:0">
+                <li>Developed REST APIs with <b>Laravel/PHP</b></li>
+                <li>Managed Ubuntu servers on DigitalOcean; full SDLC ownership for web apps</li>
+              </ul>
+              <div class="tags"><span class="tag">Laravel</span><span class="tag">DigitalOcean</span></div>
+            </div>
           </div>
         </div>
 
         <!-- Prodigenious -->
-        <div class="terminal p-6">
-          <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-            <h3 class="text-xl font-bold text-primary">Prodigenious</h3>
-            <span class="text-gray-400">2016 - 2017</span>
-          </div>
-          <h4 class="text-lg font-semibold mb-2">Senior Software Engineer Team Lead</h4>
-          <ul class="list-disc pl-6 space-y-2">
-            <li>Managed team of <span class="text-secondary">5-7 developers</span></li>
-            <li>Coordinated client requirements and project timelines</li>
-            <li>Implemented developer training programs</li>
-          </ul>
-          <div class="mt-3 flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MongoDB</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">DevOps</span>
+        <div class="xp reveal">
+          <div class="when">2016 — 2017</div>
+          <div class="body">
+            <h3>Prodigenious</h3>
+            <p class="role">Senior Software Engineer · Team Lead</p>
+            <div class="engagement">
+              <ul style="margin-top:0">
+                <li>Managed a team of <b>5–7 developers</b>; owned client requirements and timelines</li>
+                <li>Built developer training programs</li>
+              </ul>
+              <div class="tags"><span class="tag">Laravel</span><span class="tag">MongoDB</span><span class="tag">DevOps</span></div>
+            </div>
           </div>
         </div>
 
-        <!-- Novatore Solutions -->
-        <div class="terminal p-6">
-          <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-            <h3 class="text-xl font-bold text-primary">Novatore Solutions</h3>
-            <span class="text-gray-400">2015 - 2016</span>
-          </div>
-          <h4 class="text-lg font-semibold mb-2">Software Developer</h4>
-          <ul class="list-disc pl-6 space-y-2">
-            <li>Developed law firm web app using <span class="text-secondary">Laravel</span></li>
-            <li>Built travel agency platform with <span class="text-secondary">CodeIgniter</span></li>
-            <li>Implemented dynamic backend systems</li>
-          </ul>
-          <div class="mt-3 flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">PHP</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MySQL</span>
+        <!-- Novatore -->
+        <div class="xp reveal">
+          <div class="when">2015 — 2016</div>
+          <div class="body">
+            <h3>Novatore Solutions</h3>
+            <p class="role">Software Developer</p>
+            <div class="engagement">
+              <ul style="margin-top:0">
+                <li>Built a law-firm platform in <b>Laravel</b> and a travel-agency platform in <b>CodeIgniter</b></li>
+                <li>Implemented dynamic backend systems</li>
+              </ul>
+              <div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="container mx-auto px-4 py-20">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6 glow">
-        <span class="text-primary">#</span> projects
-      </h2>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Enovi LiveAgent -->
-        <div class="project-card rounded-lg p-6">
-          <h3 class="text-xl font-bold text-primary mb-2">Enovi LiveAgent</h3>
-          <p class="text-gray-400 mb-4">Enterprise customer support system</p>
-          <ul class="list-disc pl-6 space-y-1 text-sm">
-            <li>Scaled to handle <span class="text-secondary">900k+ tickets</span> with multi-tenancy architecture</li>
-            <li>Reduced infrastructure costs by <span class="text-secondary">35%</span> through architectural redesign
-            </li>
-            <li>Improved API performance by <span class="text-secondary">50%</span> with service layer implementation
-            </li>
-            <li>Built <span class="text-secondary">5+ Golang microservices</span> for critical functions</li>
-          </ul>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Golang</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MongoDB</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Airflow</span>
-          </div>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="idx">03</span>
+          <h2>Selected Work</h2>
+          <span class="note">// production systems</span>
         </div>
 
-        <!-- Astrom -->
-        <div class="project-card rounded-lg p-6">
-          <h3 class="text-xl font-bold text-primary mb-2">Astrom</h3>
-          <p class="text-gray-400 mb-4">ETL Data Integration Platform</p>
-          <ul class="list-disc pl-6 space-y-1 text-sm">
-            <li>Integrated <span class="text-secondary">20+ data sources</span> (SaaS, APIs, databases)</li>
-            <li>Implemented minute-level pipeline scheduling controls</li>
-            <li>Developed with Golang backend and Vue.js frontend</li>
-            <li>Utilized Kafka for real-time data processing</li>
-            <li>Integrate Airflow to manage scheduling</li>
-          </ul>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Golang</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Vue.js</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Kafka</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Airflow</span>
-          </div>
+        <div class="proj-grid">
+          <article class="proj featured reveal">
+            <span class="pid">Featured · Enterprise data platform</span>
+            <h3>Astrom Studio</h3>
+            <p class="what">Data operations platform </p>
+            <ul>
+              <li>Connection registry across <b>Snowflake, BigQuery, ClickHouse, Oracle, MSSQL, MySQL and MongoDB</b>, with a UI pipeline wizard that generates real <b>Airflow DAGs</b> behind the scenes</li>
+              <li>Full governance suite: <b>Data Dictionary, MDM, Common Data Models</b> and a data quality rules engine — canonical views built without users ever writing SQL</li>
+              <li>KPI dictionary with threshold alerts that <b>auto-open and bulk-create tickets</b> in the NHCC ticketing system, with batching, lookups and retry handling</li>
+              <li><b>AI woven through every module</b>: natural language to SQL grounded on live schemas, suggested data models and relations, and an agent that builds dashboards from plain English — provider-swappable (self-hosted vLLM or OpenAI-compatible)</li>
+              <li>Multi-tenant from day one: org-scoped themes, per-permission <b>RBAC</b>, and token-gated kiosk dashboards for command-center screens</li>
+            </ul>
+            <div class="tags"><span class="tag">Golang</span><span class="tag">Vue.js</span><span class="tag">Python</span><span class="tag">Airflow</span><span class="tag">ClickHouse</span><span class="tag">Snowflake</span><span class="tag">MongoDB</span><span class="tag">AI / LLM</span></div>
+          </article>
+
+          <article class="proj reveal">
+            <span class="pid">Enterprise support</span>
+            <h3>Enovi LiveAgent</h3>
+            <p class="what">Multi-tenant customer support platform</p>
+            <ul>
+              <li>Scaled to <b>900k+ tickets</b> on a multi-tenancy architecture</li>
+              <li>Cut infrastructure costs by <b>35%</b> through an architectural redesign</li>
+              <li>Improved API performance by <b>50%</b>; built <b>5+ Golang microservices</b> for critical functions</li>
+            </ul>
+            <div class="tags"><span class="tag">Golang</span><span class="tag">Laravel</span><span class="tag">React</span><span class="tag">MongoDB</span><span class="tag">Airflow</span></div>
+          </article>
+
+          <article class="proj reveal">
+            <span class="pid">Events & ticketing</span>
+            <h3>WeBook</h3>
+            <p class="what">Social engagement platform</p>
+            <ul>
+              <li>Managed <b>100+ events</b> with <b>100k+ daily tickets</b></li>
+              <li>Increased sales by <b>40%</b> through feature development</li>
+              <li>Payment gateways and Google Maps integration; UX improved <b>30%</b> with React</li>
+            </ul>
+            <div class="tags"><span class="tag">Laravel</span><span class="tag">React</span><span class="tag">MongoDB</span><span class="tag">Redis</span></div>
+          </article>
+
+          <article class="proj reveal">
+            <span class="pid">Gaming</span>
+            <h3>Kafu Games</h3>
+            <p class="what">Esports tournament platform</p>
+            <ul>
+              <li>Supported <b>200k+ players</b> in competitive gaming</li>
+              <li>Performance up <b>30%</b>; load times down <b>50%</b> via database optimization</li>
+              <li>Lazy loading and advanced indexing strategies</li>
+            </ul>
+            <div class="tags"><span class="tag">Laravel</span><span class="tag">React</span><span class="tag">Google Cloud</span></div>
+          </article>
+
+          <article class="proj reveal">
+            <span class="pid">Healthcare</span>
+            <h3>APM</h3>
+            <p class="what">Asset performance management</p>
+            <ul>
+              <li>Medical equipment inventory across <b>700+ facilities</b></li>
+              <li>Maintenance tracking for <b>10,000+ hospital devices</b></li>
+              <li>Real-time equipment status monitoring; manufacturer & HMC integrations</li>
+            </ul>
+            <div class="tags"><span class="tag">Laravel</span><span class="tag">React</span><span class="tag">MongoDB</span></div>
+          </article>
+
+          <article class="proj reveal">
+            <span class="pid">Healthcare</span>
+            <h3>IOC Vaccine Portal</h3>
+            <p class="what">COVID-19 vaccination tracking</p>
+            <ul>
+              <li>Tracked <b>1M+ vaccinations</b> in real time across <b>500+ sites</b></li>
+              <li>Daily inventory monitoring and automated leadership reporting</li>
+            </ul>
+            <div class="tags"><span class="tag">Laravel</span><span class="tag">React</span><span class="tag">MongoDB</span></div>
+          </article>
+
+          <article class="proj reveal">
+            <span class="pid">Esports · Charity</span>
+            <h3>Gamers Without Borders</h3>
+            <p class="what">$10M charity esports event</p>
+            <ul>
+              <li>Supported <b>50,000+ concurrent viewers</b> during tournaments</li>
+              <li>Donation tracking for COVID-19 relief; <b>10+ game titles</b> with elite players</li>
+            </ul>
+            <div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div>
+          </article>
+
+          <article class="proj reveal">
+            <span class="pid">Streaming</span>
+            <h3>GSA Live</h3>
+            <p class="what">Saudi Professional League streaming</p>
+            <ul>
+              <li><b>100,000+ monthly active users</b></li>
+              <li>Real-time match statistics overlay; custom content moderation system</li>
+            </ul>
+            <div class="tags"><span class="tag">React</span><span class="tag">MobX</span><span class="tag">Bootstrap</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="idx">04</span>
+          <h2>Capabilities</h2>
+          <span class="note">// tools & years</span>
         </div>
 
-        <!-- Halayalla -->
-        <div class="project-card rounded-lg p-6">
-          <h3 class="text-xl font-bold text-primary mb-2">WeBook</h3>
-          <p class="text-gray-400 mb-4">Social Engagement Platform</p>
-          <ul class="list-disc pl-6 space-y-1 text-sm">
-            <li>Managed <span class="text-secondary">100+ events</span> with <span class="text-secondary">100k+ daily
-                tickets</span></li>
-            <li>Increased sales by <span class="text-secondary">40%</span> through feature development</li>
-            <li>Integrated payment gateways and Google Maps API</li>
-            <li>Improved UX by <span class="text-secondary">30%</span> with React.js enhancements</li>
-          </ul>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MongoDB</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Redis</span>
+        <div class="skill-table reveal">
+          <div class="skill-row">
+            <div class="cat">Backend</div>
+            <div class="items">
+              <span class="chip">Laravel / PHP<span class="yrs">8y</span></span>
+              <span class="chip">Database design<span class="yrs">7y</span></span>
+              <span class="chip">Golang / Gin<span class="yrs">3y</span></span>
+              <span class="chip">Node.js<span class="yrs">2y</span></span>
+            </div>
           </div>
-        </div>
-
-        <!-- Kafu Games -->
-        <div class="project-card rounded-lg p-6">
-          <h3 class="text-xl font-bold text-primary mb-2">Kafu Games</h3>
-          <p class="text-gray-400 mb-4">Esports Tournament Platform</p>
-          <ul class="list-disc pl-6 space-y-1 text-sm">
-            <li>Supported <span class="text-secondary">200k+ players</span> in competitive gaming</li>
-            <li>Optimized performance by <span class="text-secondary">30%</span> through code improvements</li>
-            <li>Reduced load times by <span class="text-secondary">50%</span> via database optimization</li>
-            <li>Implemented lazy loading and advanced indexing</li>
-          </ul>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Google Cloud</span>
+          <div class="skill-row">
+            <div class="cat">Frontend</div>
+            <div class="items">
+              <span class="chip">Vue.js<span class="yrs">5y</span></span>
+              <span class="chip">Bootstrap<span class="yrs">5y</span></span>
+              <span class="chip">React<span class="yrs">3y</span></span>
+              <span class="chip">Tailwind CSS<span class="yrs">2y</span></span>
+            </div>
           </div>
-        </div>
-        <!-- APM Project -->
-        <div class="project-card rounded-lg p-6">
-          <h3 class="text-xl font-bold text-primary mb-2">APM (Asset Performance Management)</h3>
-          <ul class="list-disc pl-6 space-y-1 text-sm">
-            <li>Constructed for Client to manage <span class="text-secondary">medical equipment
-                inventory</span> across 700+ facilities</li>
-            <li>Enabled better maintenance tracking for <span class="text-secondary">10,000+ hospital devices</span>
-            </li>
-            <li>Integrated manufacturer and HMC management systems</li>
-            <li>Implemented real-time equipment status monitoring</li>
-          </ul>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MongoDB</span>
+          <div class="skill-row">
+            <div class="cat">DevOps & cloud</div>
+            <div class="items">
+              <span class="chip">CI/CD<span class="yrs">5y</span></span>
+              <span class="chip">Docker<span class="yrs">3y</span></span>
+              <span class="chip">AWS<span class="yrs">3y</span></span>
+            </div>
           </div>
-        </div>
-
-        <!-- IOC Vaccine Portal -->
-        <div class="project-card rounded-lg p-6">
-          <h3 class="text-xl font-bold text-primary mb-2">IOC Portal for Vaccine</h3>
-          <ul class="list-disc pl-6 space-y-1 text-sm">
-            <li>Tracking system for <span class="text-secondary">COVID-19 vaccination efforts</span></li>
-            <li>Monitored daily vaccine inventory across <span class="text-secondary">500+ sites</span></li>
-            <li>Tracked <span class="text-secondary">1M+ vaccinations</span> in real-time</li>
-            <li>Generated automated reports for leadership</li>
-          </ul>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Laravel</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MongoDB</span>
-          </div>
-        </div>
-
-        <!-- Gamers Without Borders -->
-        <div class="project-card rounded-lg p-6">
-          <h3 class="text-xl font-bold text-primary mb-2">Gamers Without Borders</h3>
-          <ul class="list-disc pl-6 space-y-1 text-sm">
-            <li>Developed platform for <span class="text-secondary">$10M charity esports event</span></li>
-            <li>Supported <span class="text-secondary">50,000+ concurrent viewers</span> during tournaments</li>
-            <li>Integrated donation tracking for COVID-19 relief efforts</li>
-            <li>Featured <span class="text-secondary">10+ game titles</span> with elite player participation</li>
-          </ul>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Node.js</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MongoDB</span>
-          </div>
-        </div>
-
-        <!-- GSA Live -->
-        <div class="project-card rounded-lg p-6">
-          <h3 class="text-xl font-bold text-primary mb-2">GSA Live</h3>
-          <ul class="list-disc pl-6 space-y-1 text-sm">
-            <li>Live streaming platform for <span class="text-secondary">Saudi Professional League</span></li>
-            <li>Supported <span class="text-secondary">100,000+ monthly active users</span></li>
-            <li>Implemented real-time match statistics overlay</li>
-            <li>Developed custom content moderation system</li>
-          </ul>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">React</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">MobX</span>
-            <span class="px-2 py-1 bg-blue-900/30 text-blue-400 rounded text-xs">Bootstrap</span>
+          <div class="skill-row">
+            <div class="cat">Data engineering</div>
+            <div class="items">
+              <span class="chip">MS SQL<span class="yrs">5y</span></span>
+              <span class="chip">Python<span class="yrs">4y</span></span>
+              <span class="chip">ETL pipelines<span class="yrs">4y</span></span>
+              <span class="chip">Apache Airflow<span class="yrs">3y</span></span>
+              <span class="chip">ClickHouse<span class="yrs">2y</span></span>
+              <span class="chip">Snowflake<span class="yrs">2y</span></span>
+              <span class="chip">Kafka<span class="yrs">1y</span></span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Contact Section -->
-  <section id="contact" class="container mx-auto px-4 py-20">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6 glow">
-        <span class="text-primary">#</span> contact
-      </h2>
+    </section>
 
-      <div class="terminal p-6">
-        <div class="mb-4">
-          <span class="prompt">$</span>
-          <span class="command"> send_message --to danialghazali31@gmail.com</span>
-        </div>
-
-        <form class="space-y-4">
-          <div>
-            <label class="block text-sm text-gray-400 mb-1">Name</label>
-            <input type="text"
-              class="w-full bg-darker border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-primary">
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-box reveal">
+          <p class="eyebrow">05 — Contact</p>
+          <h2>Have a system worth building?</h2>
+          <p class="lead">I take on solution architecture and full-stack engagements — from designing the
+          system to shipping it. Tell me what you're trying to build, and I'll tell you how I'd build it.</p>
+          <div class="contact-actions">
+            <a class="btn solid" href="mailto:danialghazali31@gmail.com">Email me</a>
+            <button class="copy-btn" id="copyEmail" type="button">danialghazali31@gmail.com ⧉</button>
           </div>
-          <div>
-            <label class="block text-sm text-gray-400 mb-1">Email</label>
-            <input type="email"
-              class="w-full bg-darker border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-primary">
-          </div>
-          <div>
-            <label class="block text-sm text-gray-400 mb-1">Message</label>
-            <textarea rows="4"
-              class="w-full bg-darker border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-primary"></textarea>
-          </div>
-          <button type="submit"
-            class="px-6 py-2 bg-primary text-dark rounded hover:bg-blue-400 transition font-medium">Submit</button>
-        </form>
-
-        <div class="mt-8">
-          <span class="prompt">$</span>
-          <span class="command"> find_me_on</span>
-          <div class="flex space-x-4 mt-4">
-            <a href="https://github.com/deanx3" class="text-gray-400 hover:text-primary transition">GitHub</a>
-            <a href="https://www.linkedin.com/in/danial-ghazali-66844aba/"
-              class="text-gray-400 hover:text-primary transition">LinkedIn</a>
-            <a href="https://x.com/Deanx33" class="text-gray-400 hover:text-primary transition">Twitter</a>
+          <div class="socials">
+            <a href="https://github.com/deanx3" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/danial-ghazali-66844aba/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://x.com/Deanx33" target="_blank" rel="noopener">X / Twitter</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Footer -->
-  <footer class="border-t border-gray-800 py-8">
-    <div class="container mx-auto px-4 text-center">
-      <p class="text-gray-400">
-        &copy; 2025 Danial Ghazali.
-      </p>
+  <footer class="site">
+    <div class="wrap">
+      <span>© 2026 Danial Ghazali</span>
+      <span>portfolio <span class="hi">v2.0</span> — designed & built by me</span>
     </div>
   </footer>
 
   <script>
-    // Simple typewriter effect for terminal commands
-    document.addEventListener('DOMContentLoaded', () => {
-      const commands = [
-        'git commit -m "Initial portfolio version"',
-        'go build ./cmd/server',
-        'docker compose up -d',
-        'npm run dev'
-      ];
+    // Theme switcher
+    const themeBtns = document.querySelectorAll('[data-theme-pick]');
+    const themeColors = { bronze:'#0e0b07', circuit:'#0a0e18', mint:'#081210', ember:'#120c0b', paper:'#f1ece1' };
+    function setTheme(name){
+      document.documentElement.dataset.theme = name;
+      themeBtns.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.themePick === name)));
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta && themeColors[name]) meta.setAttribute('content', themeColors[name]);
+      try { localStorage.setItem('dg-theme', name); } catch (e) {}
+    }
+    themeBtns.forEach(b => b.addEventListener('click', () => setTheme(b.dataset.themePick)));
+    try {
+      const saved = localStorage.getItem('dg-theme');
+      if (saved && themeColors[saved]) setTheme(saved);
+    } catch (e) {}
 
-      let currentCommand = 0;
-      const commandElement = document.querySelector('.command');
+    // Riyadh clock
+    const clock = document.getElementById('clock');
+    const tick = () => {
+      clock.textContent = new Intl.DateTimeFormat('en-GB', {
+        hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Riyadh'
+      }).format(new Date());
+    };
+    tick(); setInterval(tick, 30000);
 
-      if (commandElement) {
-        setInterval(() => {
-          commandElement.textContent = ' ' + commands[currentCommand];
-          currentCommand = (currentCommand + 1) % commands.length;
-        }, 3000);
+    // Scroll reveal
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Count-up metrics
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const counters = document.querySelectorAll('[data-count]');
+    const cio = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        cio.unobserve(el);
+        const target = parseFloat(el.dataset.count);
+        const decimals = parseInt(el.dataset.decimals || '0', 10);
+        if (reduced) { el.textContent = target.toFixed(decimals); return; }
+        const dur = 1400, t0 = performance.now();
+        const step = (t) => {
+          const p = Math.min((t - t0) / dur, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = (target * eased).toFixed(decimals);
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      });
+    }, { threshold: 0.4 });
+    counters.forEach(el => cio.observe(el));
+
+    // Copy email
+    const copyBtn = document.getElementById('copyEmail');
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText('danialghazali31@gmail.com');
+        const old = copyBtn.textContent;
+        copyBtn.textContent = 'Copied ✓';
+        setTimeout(() => copyBtn.textContent = old, 1800);
+      } catch (e) {
+        copyBtn.textContent = 'danialghazali31@gmail.com';
       }
     });
   </script>
-  <!-- Structured Data for SEO -->
+
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -770,7 +1126,7 @@
     "jobTitle": "Solution Architect & Full Stack Developer",
     "url": "https://danialghazali.com",
     "image": "https://danialghazali.com/og-image.png",
-    "description": "Solution Architect & Full Stack Developer with 9+ years experience in Golang, Laravel, Python, and microservices. Specialized in big data pipelines, ETL platforms, and enterprise solutions.",
+    "description": "Solution Architect & Full Stack Developer with 10+ years of experience in Golang, Laravel, React, Vue, Python and microservices, with hands-on data engineering experience.",
     "email": "danialghazali31@gmail.com",
     "sameAs": [
       "https://www.linkedin.com/in/danial-ghazali-66844aba/",
@@ -778,40 +1134,18 @@
       "https://x.com/Deanx33"
     ],
     "knowsAbout": [
-      "Golang",
-      "Laravel",
-      "PHP",
-      "Python",
-      "Microservices Architecture",
-      "Solution Architecture",
-      "Data Engineering",
-      "Big Data Pipelines",
-      "Snowflake",
-      "Apache Airflow",
-      "ETL Development",
-      "Vue.js",
-      "React",
-      "MongoDB",
-      "PostgreSQL",
-      "Docker",
-      "AWS",
-      "Kubernetes",
-      "CI/CD"
+      "Golang","Laravel","PHP","React","Vue.js","Python","Microservices Architecture","Solution Architecture",
+      "Full Stack Development","API Development","Data Engineering","Snowflake","ClickHouse","Apache Airflow",
+      "ETL Pipelines","MongoDB","PostgreSQL","Docker","AWS","Kubernetes","CI/CD"
     ],
     "worksFor": {
       "@type": "Organization",
       "name": "Ascend Solutions",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "Saudi Arabia"
-      }
+      "address": { "@type": "PostalAddress", "addressCountry": "Saudi Arabia" }
     },
     "workLocation": {
       "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "Saudi Arabia"
-      }
+      "address": { "@type": "PostalAddress", "addressCountry": "Saudi Arabia" }
     }
   }
   </script>
@@ -821,50 +1155,9 @@
     "@type": "WebSite",
     "name": "Danial Ghazali Portfolio",
     "url": "https://danialghazali.com",
-    "description": "Portfolio of Danial Ghazali - Solution Architect & Full Stack Developer",
-    "author": {
-      "@id": "https://danialghazali.com/#person"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://danialghazali.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "About",
-        "item": "https://danialghazali.com#about"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Experience",
-        "item": "https://danialghazali.com#experience"
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "name": "Projects",
-        "item": "https://danialghazali.com#projects"
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "name": "Contact",
-        "item": "https://danialghazali.com#contact"
-      }
-    ]
+    "description": "Portfolio of Danial Ghazali — Solution Architect & Full Stack Developer",
+    "author": { "@id": "https://danialghazali.com/#person" }
   }
   </script>
 </body>
-
 </html>
