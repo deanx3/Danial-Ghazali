@@ -15,6 +15,10 @@
 
   <meta name="theme-color" content="#0e0b07">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
   <!-- Open Graph -->
   <meta property="og:type" content="profile">
   <meta property="profile:first_name" content="Danial">
@@ -193,7 +197,7 @@
     .nav-links a:hover{ color:var(--accent-hi); }
 
     /* theme picker */
-    .theme-picker{ display:flex; gap:8px; align-items:center; margin-left:auto; }
+    .theme-picker{ display:none; gap:8px; align-items:center; margin-left:auto; }
     .nav-links + .theme-picker{ margin-left:0; }
     .theme-picker button{
       width:18px; height:18px; border-radius:50%;
@@ -221,6 +225,32 @@
 
     /* ---------- hero ---------- */
     .hero{ padding:84px 0 30px; }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1fr minmax(0, 360px);
+      gap:56px;
+      align-items:center;
+    }
+    .hero-portrait{ display:flex; justify-content:center; position:relative; }
+    .hero-portrait::before{
+      content:""; position:absolute; inset:-10% -5% -5% -5%;
+      background: radial-gradient(60% 50% at 50% 45%, rgba(232,163,61,.18), transparent 70%);
+      filter: blur(20px); z-index:0; pointer-events:none;
+    }
+    .hero-portrait img{
+      position:relative; z-index:1;
+      width:100%; max-width:360px; height:auto; display:block;
+      filter: drop-shadow(0 30px 50px rgba(0,0,0,.55));
+      transform: scaleX(-1);
+      -webkit-mask-image:
+        linear-gradient(to bottom, #000 55%, transparent 100%),
+        radial-gradient(ellipse at 50% 45%, #000 60%, transparent 92%);
+      -webkit-mask-composite: source-in;
+      mask-image:
+        linear-gradient(to bottom, #000 55%, transparent 100%),
+        radial-gradient(ellipse at 50% 45%, #000 60%, transparent 92%);
+      mask-composite: intersect;
+    }
     .eyebrow{
       font-family:var(--mono); font-size:12px; letter-spacing:.18em;
       text-transform:uppercase; color:var(--accent);
@@ -514,6 +544,27 @@
 
     /* ---------- responsive ---------- */
     @media(max-width:920px){
+      .hero-grid{ grid-template-columns:1fr; gap:24px; }
+      .hero-portrait{
+        order:-1;
+        width:140px; height:140px;
+        margin:0 auto;
+        border-radius:50%;
+        overflow:hidden;
+        background:var(--bg-raise);
+        border:1px solid var(--line);
+        box-shadow: 0 18px 40px rgba(0,0,0,.45), 0 0 0 1px rgba(232,163,61,.18);
+      }
+      .hero-portrait::before{ display:none; }
+      .hero-portrait img{
+        width:100%; max-width:100%; height:100%;
+        object-fit:cover;
+        object-position:center 18%;
+        margin:0;
+        filter:none;
+        -webkit-mask-image:none; mask-image:none;
+        transform:scaleX(-1);
+      }
       .about-grid{ grid-template-columns:1fr; gap:36px; }
       .metrics .wrap{ grid-template-columns:repeat(2,1fr); }
       .metric{ border-top:1px solid var(--line); }
@@ -559,7 +610,7 @@
   <!-- nav -->
   <header class="site nav">
     <div class="wrap">
-      <a class="mark" href="#top">DG<span>.</span> <span class="ver">v2.0</span></a>
+      <a class="mark" href="#top">DG<span>.</span></a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
@@ -582,16 +633,23 @@
     <!-- HERO -->
     <section class="hero" style="padding-top:84px;">
       <div class="wrap">
-        <p class="eyebrow rise d1">Danial Ghazali — Solution Architect · Full Stack Developer</p>
-        <h1 class="rise d2">I design &amp; build software at <em>national scale</em>.</h1>
-        <p class="hero-sub rise d3">
-          10+ years across the full stack — <b>Golang and Laravel backends</b>, <b>React and Vue frontends</b>,
-          microservices that hold <b>99.9% uptime</b> — plus the data engineering depth
-          (Snowflake, Airflow) to handle whatever the platform demands.
-        </p>
-        <div class="hero-actions rise d4">
-          <a class="btn solid" href="#projects">View work</a>
-          <a class="btn ghost" href="#contact">Get in touch</a>
+        <div class="hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow rise d1">Danial Ghazali — Solution Architect · Full Stack Developer</p>
+            <h1 class="rise d2">I design &amp; build software at <em>national scale</em>.</h1>
+            <p class="hero-sub rise d3">
+              10+ years across the full stack — <b>Golang and Laravel backends</b>, <b>React and Vue frontends</b>,
+              microservices that hold <b>99.9% uptime</b> — plus the data engineering depth
+              (Snowflake, Airflow) to handle whatever the platform demands.
+            </p>
+            <div class="hero-actions rise d4">
+              <a class="btn solid" href="#projects">View work</a>
+              <a class="btn ghost" href="#contact">Get in touch</a>
+            </div>
+          </div>
+          <div class="hero-portrait rise d3">
+            <img src="me.png" alt="Danial Ghazali — illustrated portrait" loading="eager" decoding="async">
+          </div>
         </div>
 
         <!-- signature: live architecture diagram -->
@@ -662,9 +720,9 @@
     <div class="metrics reveal">
       <div class="wrap">
         <div class="metric"><div class="num"><span data-count="10">0</span><small>+</small></div><div class="lab">Years building production systems</div></div>
-        <div class="metric"><div class="num"><span data-count="900">0</span><small>K+</small></div><div class="lab">Tickets scaled on a single platform</div></div>
-        <div class="metric"><div class="num"><span data-count="99.9" data-decimals="1">0</span><small>%</small></div><div class="lab">Uptime on Golang microservices</div></div>
-        <div class="metric"><div class="num"><span data-count="50">0</span><small>%</small></div><div class="lab">Faster APIs after redesign</div></div>
+        <div class="metric"><div class="num"><span data-count="5">0</span><small>+</small></div><div class="lab">Languages shipped in production</div></div>
+        <div class="metric"><div class="num"><span data-count="18">0</span><small>+</small></div><div class="lab">Tools &amp; frameworks in active use</div></div>
+        <div class="metric"><div class="num"><span data-count="20">0</span><small>+</small></div><div class="lab">Projects successfully delivered</div></div>
       </div>
     </div>
 
@@ -761,17 +819,6 @@
                 <li>Built <b>Astrom Studio</b>, the ministry's data operations platform (see Selected Work)</li>
               </ul>
               <div class="tags"><span class="tag">Golang</span><span class="tag">Python</span><span class="tag">Airflow</span><span class="tag">ClickHouse</span><span class="tag">MS SQL</span></div>
-            </div>
-
-            <div class="engagement">
-              <h4>Health Holding Company (HHC)</h4>
-              <p class="tagline">National healthcare integration platform</p>
-              <ul>
-                <li>Digital consultant on a platform integrating <b>120+ hospital HIS systems</b> across heterogeneous formats</li>
-                <li>Designed end-to-end architecture on <b>Snowflake, Apache Airflow and Python</b>; near-real-time and batch pipelines</li>
-                <li>Connected healthcare data to national platforms (<b>Raqeem, NHO</b>) for compliance</li>
-              </ul>
-              <div class="tags"><span class="tag">Snowflake</span><span class="tag">Airflow</span><span class="tag">Python</span><span class="tag">HIS integration</span></div>
             </div>
 
             <div class="engagement">
@@ -1039,7 +1086,7 @@
   <footer class="site">
     <div class="wrap">
       <span>© 2026 Danial Ghazali</span>
-      <span>portfolio <span class="hi">v2.0</span> — designed & built by me</span>
+      <span>portfolio — designed & built by me</span>
     </div>
   </footer>
 
